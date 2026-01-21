@@ -10,140 +10,102 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root { scroll-behavior: smooth; }
-        body { 
-            color: white; 
-            margin: 0; 
-            font-family: 'Inter', sans-serif; 
-            overflow-x: hidden;
-            transition: background-color 1.2s ease; 
-            background-color: #0f172a; 
-        }
-        
-        /* Dynamic Background States */
+        body { color: white; margin: 0; font-family: 'Inter', sans-serif; overflow-x: hidden; transition: background-color 1.2s ease; background-color: #0f172a; }
         body.bg-systems { background-color: #0f172a; } 
         body.bg-outreach { background-color: #071e22; } 
         body.bg-branding { background-color: #1a1033; } 
-
         .gradient-text { background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        /* Upgrade Reveal Effects */
-        .reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.17, 0.55, 0.55, 1); }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
-        
-        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; border-color: #3b82f6; box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.4); }
-        
-        .floating-wa { position: fixed; bottom: 25px; right: 25px; background: #25d366; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.4); z-index: 1000; transition: all 0.3s; }
-        .floating-wa:hover { transform: scale(1.15) rotate(15deg); }
+        .floating-wa { position: fixed; bottom: 25px; right: 25px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1000; }
     </style>
 </head>
 <body class="flex flex-col min-h-screen bg-systems">
 
-    <nav class="p-6 flex justify-between items-center sticky top-0 bg-slate-950/80 backdrop-blur-xl z-50 border-b border-white/5">
-        <div class="flex items-center gap-3">
-            <img src="favicon.png" alt="TA" class="w-10 h-10 object-contain rounded-lg" onerror="this.style.opacity='0'">
-            <div class="text-xl font-black tracking-tighter md:text-2xl uppercase">THOUFIQ AHAMED</div>
+    <nav class="p-4 flex justify-between items-center sticky top-0 bg-slate-950/90 backdrop-blur-xl z-50 border-b border-white/10">
+        <div class="flex items-center gap-2">
+            <img src="favicon.png" onerror="this.src='favicon.PNG'" alt="TA" class="w-8 h-8 rounded-md object-contain">
+            <div class="text-lg font-black tracking-tighter uppercase leading-none">THOUFIQ<br><span class="text-xs text-blue-400">AHAMED</span></div>
         </div>
-        
-        <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest text-gray-400">
-            <a href="#digital" class="hover:text-white transition-colors">IT Systems</a>
-            <a href="#outreach" class="hover:text-white transition-colors">Local Outreach</a>
-        </div>
-        <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-blue-500/20">Consult Now</a>
+        <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-blue-600 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider">Consult</a>
     </nav>
 
-    <header class="flex flex-col items-center justify-center text-center px-6 py-32">
-        <div class="mb-8 reveal">
-            <img src="favicon.png" alt="TA Logo" class="w-32 h-32 mx-auto drop-shadow-[0_0_25px_rgba(59,130,246,0.5)] rounded-2xl" onerror="this.style.opacity='0'">
+    <header class="flex flex-col items-center justify-center text-center px-6 py-24">
+        <div class="mb-6 reveal active">
+            <img src="favicon.png" onerror="this.src='favicon.PNG'" alt="TA Logo" class="w-24 h-24 mx-auto drop-shadow-2xl rounded-2xl">
         </div>
-        <h1 class="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tighter reveal">
+        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tighter reveal active">
             Upgrading<br><span class="gradient-text italic">Healthcare.</span>
         </h1>
-        <p class="text-gray-400 max-w-2xl text-lg md:text-xl mb-12 leading-relaxed reveal">
-            I modernize Hospital IT ecosystems and lead high-impact community medical camps to drive measurable patient growth.
+        <p class="text-gray-400 max-w-lg text-base md:text-lg mb-10 leading-relaxed reveal active">
+            I modernize Hospital IT and lead community medical camps to drive measurable patient growth.
         </p>
-        <div class="flex flex-col md:flex-row gap-6 reveal">
-            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-white text-slate-950 px-12 py-5 rounded-2xl font-black text-xl hover:bg-blue-500 hover:text-white transition-all transform hover:scale-105 shadow-2xl">Request Strategy Call</a>
-            <a href="https://wa.me/919385352585" class="bg-transparent border-2 border-slate-700 hover:border-green-500 text-white px-10 py-5 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 transition-all">
-                WhatsApp
-            </a>
+        <div class="flex flex-col gap-4 w-full max-w-xs reveal active">
+            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-white text-slate-950 py-4 rounded-xl font-black text-lg shadow-xl">Get Started</a>
+            <a href="https://wa.me/919385352585" class="bg-slate-800 text-white py-4 rounded-xl font-bold border border-slate-700">WhatsApp Me</a>
         </div>
     </header>
 
-    <section class="reveal px-6 py-16 bg-blue-600 rounded-[3rem] mx-4 md:mx-12 mb-20 text-center shadow-2xl">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div><div class="text-4xl font-black">10+</div><p class="text-blue-100 font-medium uppercase text-[10px] mt-2 tracking-widest">Years Experience</p></div>
-            <div><div class="text-4xl font-black">50+</div><p class="text-blue-100 font-medium uppercase text-[10px] mt-2 tracking-widest">Medical Camps</p></div>
-            <div><div class="text-4xl font-black">Digital</div><p class="text-blue-100 font-medium uppercase text-[10px] mt-2 tracking-widest">Solutions</p></div>
-            <div><div class="text-4xl font-black">Growth</div><p class="text-blue-100 font-medium uppercase text-[10px] mt-2 tracking-widest">Specialist</p></div>
+    <section class="reveal px-6 py-10 bg-blue-600 rounded-[2.5rem] mx-4 mb-20 text-center shadow-2xl">
+        <div class="grid grid-cols-2 gap-6">
+            <div><div class="text-3xl font-black">10+</div><p class="text-blue-100 text-[10px] uppercase tracking-widest">Years Exp</p></div>
+            <div><div class="text-3xl font-black">50+</div><p class="text-blue-100 text-[10px] uppercase tracking-widest">Camps</p></div>
+            <div><div class="text-3xl font-black">Digital</div><p class="text-blue-100 text-[10px] uppercase tracking-widest">Solutions</p></div>
+            <div><div class="text-3xl font-black">Growth</div><p class="text-blue-100 text-[10px] uppercase tracking-widest">Architect</p></div>
         </div>
     </section>
 
-    <section id="outreach" class="reveal px-6 py-28 max-w-6xl mx-auto section-trigger" data-bg="bg-outreach">
-        <h2 class="text-4xl font-black mb-16 text-center italic">Local Camps & Outreach</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div class="space-y-8">
-                <div class="p-8 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 card-hover transition-all">
-                    <h4 class="font-black text-2xl mb-3">Community Camps</h4>
-                    <p class="text-gray-400">Planning screening camps and NGO coordination to connect doctors with local patients.</p>
-                </div>
-                <div class="p-8 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 card-hover transition-all">
-                    <h4 class="font-black text-2xl mb-3">Ground Promotions</h4>
-                    <p class="text-gray-400">High-impact physical marketing to increase clinic awareness in your neighborhood.</p>
-                </div>
+    <section id="outreach" class="reveal px-6 py-16 section-trigger" data-bg="bg-outreach">
+        <h2 class="text-3xl font-black mb-10 text-center italic">Local Outreach</h2>
+        <div class="space-y-6">
+            <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                <h4 class="font-bold text-xl mb-2 text-emerald-400">Medical Camps</h4>
+                <p class="text-gray-400 text-sm">Organizing high-impact screening camps to find new patients for your hospital.</p>
             </div>
-            <div class="p-10 rounded-[3rem] border-2 border-dashed border-white/20">
-                <h3 class="text-3xl font-black mb-8 text-emerald-400 italic">The Growth Loop</h3>
-                <p class="text-gray-400 mb-6 italic">Turning free community checkups into long-term hospital patients through digital tracking and follow-ups.</p>
-                <a href="https://wa.me/919385352585" class="text-white font-bold underline decoration-emerald-500 underline-offset-8">Discuss Your Next Camp →</a>
+            <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                <h4 class="font-bold text-xl mb-2 text-emerald-400">Ground Awareness</h4>
+                <p class="text-gray-400 text-sm">Direct local promotions to make your brand the #1 choice in the area.</p>
             </div>
         </div>
     </section>
 
-    <section id="digital" class="reveal px-6 py-28 bg-black/20 border-t border-white/5 section-trigger" data-bg="bg-branding">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-black mb-16 text-center text-gray-500 uppercase tracking-tighter">IT & Branding</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-12 rounded-[2.5rem] bg-white/5 border border-white/10 card-hover transition-all">
-                    <h3 class="text-2xl font-black mb-4 text-blue-400">Hospital IT</h3>
-                    <p class="text-gray-400">Auditing and implementing Integrated Hospital Management Systems (IHMS) for paperless efficiency.</p>
-                </div>
-                <div class="p-12 rounded-[2.5rem] bg-white/5 border border-white/10 card-hover transition-all">
-                    <h3 class="text-2xl font-black mb-4 text-purple-400">Clinic Branding</h3>
-                    <p class="text-gray-400">Digital profiles and social media authority for doctors to build patient trust instantly.</p>
-                </div>
+    <section id="digital" class="reveal px-6 py-16 border-t border-white/5 section-trigger" data-bg="bg-branding">
+        <h2 class="text-3xl font-black mb-10 text-center italic text-gray-400 uppercase">IT & Systems</h2>
+        <div class="space-y-6">
+            <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                <h3 class="text-xl font-bold mb-2 text-blue-400">Paperless IHMS</h3>
+                <p class="text-gray-400 text-sm">Modernizing your workflow with advanced Hospital Management Systems.</p>
+            </div>
+            <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">Doctor Branding</h3>
+                <p class="text-gray-400 text-sm">Building digital trust and authority for specialized doctors.</p>
             </div>
         </div>
     </section>
 
-    <footer class="mt-auto py-16 text-center border-t border-white/5">
-        <div class="flex justify-center gap-10 mb-10">
-            <a href="https://wa.me/919385352585" class="text-gray-500 hover:text-green-500 font-black text-xs uppercase tracking-[0.2em] transition-colors">WhatsApp</a>
-            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="text-gray-500 hover:text-blue-500 font-black text-xs uppercase tracking-[0.2em] transition-colors">Inquiry Form</a>
+    <footer class="py-12 text-center border-t border-white/5">
+        <p class="text-gray-500 text-xs mb-4">© 2026 Thoufiq Ahamed. All Rights Reserved.</p>
+        <div class="flex justify-center gap-6">
+            <a href="https://wa.me/919385352585" class="text-white text-[10px] uppercase tracking-widest font-bold">WhatsApp</a>
+            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="text-white text-[10px] uppercase tracking-widest font-bold">Inquiry</a>
         </div>
-        <p class="text-gray-500 text-sm mb-2 font-medium">© <span id="year"></span> Thoufiq Ahamed. All Rights Reserved.</p>
-        <p class="text-slate-700 text-[10px] uppercase font-bold tracking-[0.3em]">Healthcare Consultant | Growth Architect</p>
     </footer>
 
-    <a href="https://wa.me/919385352585" class="floating-wa">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="38">
+    <a href="https://wa.me/919385352585" class="floating-wa shadow-2xl">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35">
     </a>
 
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-
-        const observerOptions = { threshold: 0.3 };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
                     if (entry.target.classList.contains('section-trigger')) {
-                        const newBg = entry.target.getAttribute('data-bg');
-                        document.body.className = 'flex flex-col min-h-screen ' + newBg;
+                        document.body.className = 'flex flex-col min-h-screen ' + entry.target.getAttribute('data-bg');
                     }
                 }
             });
-        }, observerOptions);
-
+        }, { threshold: 0.2 });
         document.querySelectorAll('.reveal, .section-trigger').forEach((el) => observer.observe(el));
     </script>
 </body>
