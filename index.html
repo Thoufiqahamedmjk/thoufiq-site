@@ -53,10 +53,14 @@ body { background-color: #0f172a; color: white; margin: 0; font-family: sans-ser
 </section>
 
 <footer class="mt-auto py-8 text-center border-t border-gray-800">
-<p class="text-gray-500 text-sm">&copy; 2024 Thoufiq Ahamed. All Rights Reserved.</p>
+<p class="text-gray-500 text-sm">&copy; <span id="year"></span> Thoufiq Ahamed. All Rights Reserved.</p>
 </footer>
 
 <script type="text/javascript">
+// Auto-update year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Tawk.to Script
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
