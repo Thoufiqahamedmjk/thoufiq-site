@@ -1,30 +1,137 @@
-<style>
-.floating-wa { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s; }
-.floating-wa:hover { transform: scale(1.1); }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoufiq Ahamed | Healthcare Growth & Digital Transformation Consultant</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; margin: 0; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover:hover { transform: translateY(-8px); transition: all 0.3s ease; border-color: #3b82f6; box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3); }
+        .floating-wa { position: fixed; bottom: 25px; right: 25px; background: #25d366; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.4); z-index: 1000; transition: all 0.3s; }
+        .floating-wa:hover { transform: scale(1.1) rotate(10deg); }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
 
-<a href="https://wa.me/919385352585" class="floating-wa">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35">
-</a>
+    <nav class="p-6 flex justify-between items-center sticky top-0 bg-slate-950/90 backdrop-blur-lg z-50 border-b border-slate-800">
+        <div class="text-xl font-black tracking-tighter md:text-2xl">THOUFIQ AHAMED</div>
+        <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest text-gray-400">
+            <a href="#digital" class="hover:text-white">IT Systems</a>
+            <a href="#outreach" class="hover:text-white">Medical Camps</a>
+            <a href="#branding" class="hover:text-white">Branding</a>
+        </div>
+        <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-blue-500/20">Consult Now</a>
+    </nav>
 
-<section class="px-6 py-20 bg-blue-600 rounded-3xl mx-6 my-10 text-center text-white">
-    <h2 class="text-3xl font-bold mb-4">10+ Years of Medical Excellence</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div>
-            <div class="text-4xl font-extrabold">10+</div>
-            <p class="text-blue-100 text-sm">Years Experience</p>
+    <header class="flex flex-col items-center justify-center text-center px-6 py-28 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950">
+        <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+            Digital Systems.<br><span class="gradient-text">Ground Level Results.</span>
+        </h1>
+        <p class="text-gray-400 max-w-2xl text-lg md:text-xl mb-12 leading-relaxed">
+            I help Hospitals & Clinics bridge the gap between clinical excellence and technical innovation through IHMS, Social Branding, and On-Ground Community Outreach.
+        </p>
+        <div class="flex flex-col md:flex-row gap-6">
+            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-white text-slate-950 px-12 py-5 rounded-2xl font-black text-xl hover:bg-blue-500 hover:text-white transition-all">Start Inquiry Form</a>
+            <a href="https://wa.me/919385352585" class="bg-transparent border-2 border-slate-700 hover:border-green-500 text-white px-10 py-5 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 transition-all">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="28"> WhatsApp Me
+            </a>
         </div>
-        <div>
-            <div class="text-4xl font-extrabold">50+</div>
-            <p class="text-blue-100 text-sm">Medical Camps</p>
+    </header>
+
+    <section class="px-6 py-16 bg-blue-600 rounded-[3rem] mx-4 md:mx-12 -mt-10 mb-20 text-center shadow-2xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div><div class="text-4xl font-black">10+</div><p class="text-blue-100 font-medium uppercase text-xs mt-2 tracking-widest">Years Experience</p></div>
+            <div><div class="text-4xl font-black">50+</div><p class="text-blue-100 font-medium uppercase text-xs mt-2 tracking-widest">Medical Camps</p></div>
+            <div><div class="text-4xl font-black">100%</div><p class="text-blue-100 font-medium uppercase text-xs mt-2 tracking-widest">IT Integration</p></div>
+            <div><div class="text-4xl font-black">24/7</div><p class="text-blue-100 font-medium uppercase text-xs mt-2 tracking-widest">Strategy Support</p></div>
         </div>
-        <div>
-            <div class="text-4xl font-extrabold">100%</div>
-            <p class="text-blue-100 text-sm">IT Integration</p>
+    </section>
+
+    <section id="outreach" class="px-6 py-20 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-black mb-16 text-center">Medical Camps & Ground Outreach</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="p-8 bg-slate-900 rounded-3xl border-l-8 border-blue-500">
+                    <h4 class="font-black text-2xl mb-3 italic">Professional Camp Logistics</h4>
+                    <p class="text-gray-400">End-to-end planning: from NGO partnerships and venue scouting to doctor scheduling and patient footfall management.</p>
+                </div>
+                <div class="p-8 bg-slate-900 rounded-3xl border-l-8 border-emerald-500">
+                    <h4 class="font-black text-2xl mb-3 italic">BTL & Rural Marketing</h4>
+                    <p class="text-gray-400">Strategic awareness programs, community engagement, and local field promotions to drive direct hospital walk-ins.</p>
+                </div>
+            </div>
+            <div class="bg-slate-900/50 p-10 rounded-[3rem] border border-slate-800">
+                <h3 class="text-3xl font-black mb-8">The "Thoufiq" Advantage</h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold">1</span>
+                        <p class="text-gray-300 font-medium">Digital Lead Capture at every camp entrance.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold">2</span>
+                        <p class="text-gray-300 font-medium">Automated WhatsApp follow-up for every attendee.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold">3</span>
+                        <p class="text-gray-300 font-medium">Conversion tracking from Free Checkup to Hospital OPD.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <div class="text-4xl font-extrabold">24/7</div>
-            <p class="text-blue-100 text-sm">Strategy Support</p>
+    </section>
+
+    <section id="digital" class="px-6 py-24 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black mb-16 text-center text-gray-500 uppercase tracking-tighter">Digital & Social Specializations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div id="branding" class="p-10 rounded-[2.5rem] bg-slate-900 border border-slate-800 card-hover">
+                    <div class="text-4xl mb-6">📢</div>
+                    <h3 class="text-2xl font-black mb-4 text-purple-400">Social Branding</h3>
+                    <p class="text-gray-400">Building doctor authority through patient-centric content and targeted Facebook/Google Ads.</p>
+                </div>
+                <div class="p-10 rounded-[2.5rem] bg-slate-900 border border-slate-800 card-hover">
+                    <div class="text-4xl mb-6">💻</div>
+                    <h3 class="text-2xl font-black mb-4 text-blue-400">IT Systems</h3>
+                    <p class="text-gray-400">IHMS implementation, paperless workflow audit, and AI appointment automation.</p>
+                </div>
+                <div class="p-10 rounded-[2.5rem] bg-slate-900 border border-slate-800 card-hover">
+                    <div class="text-4xl mb-6">🏨</div>
+                    <h3 class="text-2xl font-black mb-4 text-emerald-400">Revenue Growth</h3>
+                    <p class="text-gray-400">Strategic negotiation and market expansion for multispecialty hospitals and clinics.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer class="mt-auto py-16 text-center border-t border-slate-900 bg-slate-950">
+        <div class="flex justify-center gap-10 mb-10">
+            <a href="https://wa.me/919385352585" class="text-gray-500 hover:text-green-500 font-black text-sm uppercase tracking-widest">WhatsApp</a>
+            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="text-gray-500 hover:text-blue-500 font-black text-sm uppercase tracking-widest">Inquiry Form</a>
+        </div>
+        <p class="text-gray-500 text-sm mb-2 font-medium">© <span id="year"></span> Thoufiq Ahamed. All Rights Reserved.</p>
+        <p class="text-slate-700 text-[10px] uppercase font-bold tracking-[0.3em]">IT Specialist | Healthcare Consultant | Growth Architect</p>
+    </footer>
+
+    <a href="https://wa.me/919385352585" class="floating-wa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="38">
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Tawk.to Live Chat integration
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6970d2f1cba9c0197c123808/1jfgbg07r';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+</body>
+</html>
