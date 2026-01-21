@@ -9,67 +9,66 @@
 <style>
 body { background-color: #0f172a; color: white; margin: 0; font-family: sans-serif; }
 .gradient-text { background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: #3b82f6; }
 </style>
 </head>
 <body class="flex flex-col min-h-screen">
-<nav class="p-6 flex justify-between items-center">
-<div class="text-2xl font-bold tracking-tighter">THOUFIQ AHAMED</div>
-<a href="https://wa.me/919385352585" class="bg-blue-600 text-white px-6 py-2 rounded-full font-medium">Consult Now</a>
+
+<nav class="p-6 flex justify-between items-center sticky top-0 bg-slate-950/80 backdrop-blur-md z-50">
+<div class="text-xl font-bold tracking-tighter md:text-2xl">THOUFIQ AHAMED</div>
+<a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-medium transition-colors">Consult Now</a>
 </nav>
 
-<header class="flex flex-col items-center justify-center text-center px-6 py-20">
-<h1 class="text-5xl font-extrabold mb-6 leading-tight">
+<header class="flex flex-col items-center justify-center text-center px-6 py-24">
+<h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
 Digital Transformation for<br><span class="gradient-text">Hospitals & Clinics</span>
 </h1>
-<p class="text-gray-400 max-w-2xl text-lg mb-10">Bridging the gap between clinical excellence and technical innovation. I help healthcare brands modernize operations and scale through strategic branding.</p>
-<a href="https://wa.me/919385352585" style="background-color:#25D366;color:white;border-radius:12px;padding:12px 24px;display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:bold;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="25" height="25">Book a Consultation</a>
+<p class="text-gray-400 max-w-2xl text-lg mb-12">Bridging the gap between clinical excellence and technical innovation with 10+ years of healthcare industry leadership.</p>
+<div class="flex flex-col md:flex-row gap-4">
+    <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all">Start Inquiry Form</a>
+    <a href="https://wa.me/919385352585" class="bg-transparent border border-gray-700 hover:border-green-500 text-white px-10 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24"> Direct WhatsApp
+    </a>
+</div>
 </header>
 
-<section class="bg-slate-900/50 py-10 border-y border-gray-800">
+<section class="bg-slate-900/30 py-12 border-y border-gray-800">
 <div class="max-w-6xl mx-auto px-6 text-center">
-<p class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-6">Specialized Industry Focus</p>
-<div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-90 font-medium">
-<div class="flex items-center gap-2">✓ Multi-Specialty Hospitals</div>
-<div class="flex items-center gap-2">✓ Private Clinics</div>
-<div class="flex items-center gap-2">✓ Diagnostic Centers</div>
+<p class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-6">Expertise Across Healthcare Sectors</p>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16 text-gray-400 font-medium italic">
+<span>#Hospitals</span> <span>#Clinics</span> <span>#DiagnosticCenters</span> <span>#LifeSciences</span>
 </div>
 </div>
 </section>
 
-<section class="px-6 py-16 max-w-4xl mx-auto">
-<h2 class="text-3xl font-bold mb-6">Your Strategic Partner</h2>
-<p class="text-gray-400 text-lg mb-6">With a Bachelor's in **Information Technology** and 10+ years in **Healthcare Business Development**, I offer a unique perspective on medical growth. I don't just suggest tools; I implement systems that improve patient outcomes and revenue.</p>
-<p class="text-gray-400 text-lg">From optimizing **Integrated Hospital Management Systems (IHMS)** to launching high-impact **Branding Promotions**, my mission is to make healthcare more efficient and accessible.</p>
-</section>
-
-<section class="px-6 py-16 max-w-6xl mx-auto border-t border-gray-800">
-<h2 class="text-3xl font-bold mb-10 text-center">Consulting Pillars</h2>
+<section class="px-6 py-20 max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold mb-12 text-center">Consultancy Specializations</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
-<h3 class="text-xl font-bold mb-3 text-blue-400">Digital Transformation</h3>
-<p class="text-gray-400">End-to-end modernization of hospital workflows, AI scheduling, and IHMS optimization for better operational control.</p>
+<div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 card-hover">
+<div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-6">💻</div>
+<h3 class="text-xl font-bold mb-3">Digital Transformation</h3>
+<p class="text-gray-400">Implementing Integrated Hospital Management Systems (IHMS) and AI-driven workflows to modernize patient care and administrative efficiency.</p>
 </div>
-<div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
-<h3 class="text-xl font-bold mb-3 text-purple-400">Healthcare Branding</h3>
-<p class="text-gray-400">Building trust through professional identity design and data-driven promotions tailored for doctors and patients.</p>
-</div>
-<div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
-<h3 class="text-xl font-bold mb-3 text-emerald-400">Market Expansion</h3>
-<p class="text-gray-400">Leveraging a decade of sales leadership to help clinics reach new patient demographics and exceed growth targets.</p>
-</div>
-<div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
-<h3 class="text-xl font-bold mb-3 text-orange-400">Strategic Consulting</h3>
-<p class="text-gray-400">Consultation on resource allocation, team mentoring, and high-level negotiation for large-scale medical projects.</p>
+<div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 card-hover">
+<div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-6">📢</div>
+<h3 class="text-xl font-bold mb-3">Branding Promotions</h3>
+<p class="text-gray-400">Strategic identity building and digital marketing tailored specifically for medical providers to build trust and increase patient footfall.</p>
 </div>
 </div>
 </section>
 
-<footer class="mt-auto py-8 text-center border-t border-gray-800">
-<p class="text-gray-500 text-sm">&copy; <span id="year"></span> Thoufiq Ahamed. All Rights Reserved.</p>
+<section class="px-6 py-20 max-w-4xl mx-auto text-center border-t border-gray-800">
+<h2 class="text-3xl font-bold mb-6">Ready to Scale Your Healthcare Facility?</h2>
+<p class="text-gray-400 text-lg mb-10">Submit your details via my official inquiry form to schedule a one-on-one strategic consultation.</p>
+<a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="inline-block bg-white text-slate-950 px-12 py-4 rounded-xl font-bold text-lg hover:bg-blue-400 hover:text-white transition-all">Fill Inquiry Form</a>
+</section>
+
+<footer class="mt-auto py-10 text-center border-t border-gray-800">
+<p class="text-gray-500 text-sm mb-2">&copy; <span id="year"></span> Thoufiq Ahamed. All Rights Reserved.</p>
+<p class="text-gray-600 text-xs uppercase tracking-widest">IT Specialist | Healthcare Consultant</p>
 </footer>
 
-<script type="text/javascript">
+<script>
 document.getElementById("year").textContent = new Date().getFullYear();
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
