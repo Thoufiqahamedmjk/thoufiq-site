@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoufiq Ahamed | Healthcare Growth & Digital Transformation Consultant</title>
+    <title>Thoufiq Ahamed | Healthcare Growth & Digital Transformation</title>
     
     <link rel="icon" type="image/png" href="favicon.png"> 
     
@@ -19,12 +19,14 @@
             background-color: #0f172a; 
         }
         
+        /* Dynamic Background States */
         body.bg-systems { background-color: #0f172a; } 
         body.bg-outreach { background-color: #071e22; } 
         body.bg-branding { background-color: #1a1033; } 
 
         .gradient-text { background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         
+        /* Upgrade Reveal Effects */
         .reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.17, 0.55, 0.55, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
@@ -37,9 +39,9 @@
 <body class="flex flex-col min-h-screen bg-systems">
 
     <nav class="p-6 flex justify-between items-center sticky top-0 bg-slate-950/80 backdrop-blur-xl z-50 border-b border-white/5">
-        <div class="flex items-center gap-2">
-            <img src="favicon.png" alt="TA Logo" class="w-10 h-10">
-            <div class="text-xl font-black tracking-tighter md:text-2xl uppercase">Thoufiq Ahamed</div>
+        <div class="flex items-center gap-3">
+            <img src="favicon.png" alt="TA" class="w-10 h-10 object-contain rounded-lg" onerror="this.style.opacity='0'">
+            <div class="text-xl font-black tracking-tighter md:text-2xl uppercase">THOUFIQ AHAMED</div>
         </div>
         
         <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest text-gray-400">
@@ -51,7 +53,7 @@
 
     <header class="flex flex-col items-center justify-center text-center px-6 py-32">
         <div class="mb-8 reveal">
-            <img src="favicon.png" alt="TA Logo" class="w-32 h-32 mx-auto drop-shadow-2xl">
+            <img src="favicon.png" alt="TA Logo" class="w-32 h-32 mx-auto drop-shadow-[0_0_25px_rgba(59,130,246,0.5)] rounded-2xl" onerror="this.style.opacity='0'">
         </div>
         <h1 class="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tighter reveal">
             Upgrading<br><span class="gradient-text italic">Healthcare.</span>
@@ -60,12 +62,75 @@
             I modernize Hospital IT ecosystems and lead high-impact community medical camps to drive measurable patient growth.
         </p>
         <div class="flex flex-col md:flex-row gap-6 reveal">
-            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-white text-slate-950 px-12 py-5 rounded-2xl font-black text-xl hover:bg-blue-500 hover:text-white transition-all transform hover:scale-105">Request Audit</a>
+            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="bg-white text-slate-950 px-12 py-5 rounded-2xl font-black text-xl hover:bg-blue-500 hover:text-white transition-all transform hover:scale-105 shadow-2xl">Request Strategy Call</a>
+            <a href="https://wa.me/919385352585" class="bg-transparent border-2 border-slate-700 hover:border-green-500 text-white px-10 py-5 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 transition-all">
+                WhatsApp
+            </a>
         </div>
     </header>
 
+    <section class="reveal px-6 py-16 bg-blue-600 rounded-[3rem] mx-4 md:mx-12 mb-20 text-center shadow-2xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div><div class="text-4xl font-black">10+</div><p class="text-blue-100 font-medium uppercase text-[10px] mt-2 tracking-widest">Years Experience</p></div>
+            <div><div class="text-4xl font-black">50+</div><p class="text-blue-100 font-medium uppercase text-[10px] mt-2 tracking-widest">Medical Camps</p></div>
+            <div><div class="text-4xl font-black">Digital</div><p class="text-blue-100 font-medium uppercase text-[10px] mt-2 tracking-widest">Solutions</p></div>
+            <div><div class="text-4xl font-black">Growth</div><p class="text-blue-100 font-medium uppercase text-[10px] mt-2 tracking-widest">Specialist</p></div>
+        </div>
+    </section>
+
+    <section id="outreach" class="reveal px-6 py-28 max-w-6xl mx-auto section-trigger" data-bg="bg-outreach">
+        <h2 class="text-4xl font-black mb-16 text-center italic">Local Camps & Outreach</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="p-8 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 card-hover transition-all">
+                    <h4 class="font-black text-2xl mb-3">Community Camps</h4>
+                    <p class="text-gray-400">Planning screening camps and NGO coordination to connect doctors with local patients.</p>
+                </div>
+                <div class="p-8 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 card-hover transition-all">
+                    <h4 class="font-black text-2xl mb-3">Ground Promotions</h4>
+                    <p class="text-gray-400">High-impact physical marketing to increase clinic awareness in your neighborhood.</p>
+                </div>
+            </div>
+            <div class="p-10 rounded-[3rem] border-2 border-dashed border-white/20">
+                <h3 class="text-3xl font-black mb-8 text-emerald-400 italic">The Growth Loop</h3>
+                <p class="text-gray-400 mb-6 italic">Turning free community checkups into long-term hospital patients through digital tracking and follow-ups.</p>
+                <a href="https://wa.me/919385352585" class="text-white font-bold underline decoration-emerald-500 underline-offset-8">Discuss Your Next Camp →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="digital" class="reveal px-6 py-28 bg-black/20 border-t border-white/5 section-trigger" data-bg="bg-branding">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black mb-16 text-center text-gray-500 uppercase tracking-tighter">IT & Branding</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-12 rounded-[2.5rem] bg-white/5 border border-white/10 card-hover transition-all">
+                    <h3 class="text-2xl font-black mb-4 text-blue-400">Hospital IT</h3>
+                    <p class="text-gray-400">Auditing and implementing Integrated Hospital Management Systems (IHMS) for paperless efficiency.</p>
+                </div>
+                <div class="p-12 rounded-[2.5rem] bg-white/5 border border-white/10 card-hover transition-all">
+                    <h3 class="text-2xl font-black mb-4 text-purple-400">Clinic Branding</h3>
+                    <p class="text-gray-400">Digital profiles and social media authority for doctors to build patient trust instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-auto py-16 text-center border-t border-white/5">
+        <div class="flex justify-center gap-10 mb-10">
+            <a href="https://wa.me/919385352585" class="text-gray-500 hover:text-green-500 font-black text-xs uppercase tracking-[0.2em] transition-colors">WhatsApp</a>
+            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="text-gray-500 hover:text-blue-500 font-black text-xs uppercase tracking-[0.2em] transition-colors">Inquiry Form</a>
+        </div>
+        <p class="text-gray-500 text-sm mb-2 font-medium">© <span id="year"></span> Thoufiq Ahamed. All Rights Reserved.</p>
+        <p class="text-slate-700 text-[10px] uppercase font-bold tracking-[0.3em]">Healthcare Consultant | Growth Architect</p>
+    </footer>
+
+    <a href="https://wa.me/919385352585" class="floating-wa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="38">
+    </a>
+
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
         const observerOptions = { threshold: 0.3 };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -78,6 +143,7 @@
                 }
             });
         }, observerOptions);
+
         document.querySelectorAll('.reveal, .section-trigger').forEach((el) => observer.observe(el));
     </script>
 </body>
