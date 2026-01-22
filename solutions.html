@@ -3,146 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinical Inventory | Thoufiq Ahamed</title>
+    <title>Life Line Equipment | Thoufiq Ahamed</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #020617; color: white; font-family: sans-serif; }
-        .product-card { background: #111827; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; display: flex; flex-direction: column; height: 100%; transition: 0.3s ease; }
-        .product-card:hover { border-color: #fbbf24; transform: translateY(-5px); }
-        .img-container { background: white; height: 220px; display: flex; align-items: center; justify-content: center; padding: 15px; }
-        .img-container img { max-height: 100%; max-width: 100%; object-fit: contain; }
-        .btn-amazon { background: #fbbf24; color: black; text-align: center; padding: 14px; border-radius: 12px; font-weight: 900; margin-top: auto; text-decoration: none; display: block; font-size: 11px; text-transform: uppercase; }
+        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@300;400;800&display=swap');
+        
+        body { background: #020617; color: white; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .font-sync { font-family: 'Syncopate', sans-serif; }
+        
+        .bg-medical { 
+            background-color: #020617;
+            background-image: radial-gradient(at 100% 0%, hsla(210,100%,15%,1) 0, transparent 50%), 
+                              radial-gradient(at 0% 100%, hsla(220,100%,10%,1) 0, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(15px); transition: 0.4s; }
+        .glass-card:hover { border-color: #fbbf24; transform: translateY(-5px); }
+        
+        .btn-gold { background: #fbbf24; color: #000; transition: 0.4s ease; display: inline-flex; align-items: center; justify-content: center; }
+        
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); background-color: #128c7e; }
+
+        .product-image { filter: grayscale(100%); transition: 0.5s; }
+        .glass-card:hover .product-image { filter: grayscale(0%); transform: scale(1.05); }
     </style>
 </head>
-<body class="p-6 md:p-12">
+<body class="bg-medical min-h-screen">
 
-    <nav class="max-w-7xl mx-auto flex justify-between items-center mb-10 pb-6 border-b border-white/5">
-        <a href="index.html" class="flex items-center gap-3 group">
-            <div class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-xl text-xl transition-transform group-hover:scale-110">
-                C
-            </div>
-            <div class="flex flex-col">
-                <span class="text-xl font-black uppercase tracking-tighter group-hover:text-yellow-500 transition-colors">Clinical Inventory</span>
-                <span class="text-[9px] text-gray-500 font-bold tracking-[0.2em] uppercase">Thoufiq Ahamed</span>
-            </div>
-        </a>
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
 
-        <a href="index.html" class="bg-white/5 hover:bg-yellow-500 hover:text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest transition-all">
-            Home Screen
-        </a>
+    <nav class="max-w-7xl mx-auto flex justify-between items-center p-8 sticky top-0 z-50 bg-[#020617]/90 backdrop-blur-md border-b border-white/5">
+        <div class="flex items-center gap-3">
+            <a href="index.html" class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-lg font-sync text-xl">T</a>
+            <span class="text-sm font-bold tracking-[0.3em] uppercase">Thoufiq Ahamed</span>
+        </div>
+        <div class="flex gap-8 items-center">
+            <a href="index.html" class="text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-yellow-500 transition">Back to Home</a>
+            <a href="#inquiry" class="bg-white text-black px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-yellow-500 transition">Bulk Inquiry</a>
+        </div>
     </nav>
 
-    <header class="max-w-7xl mx-auto mb-16 text-center">
-        <h1 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter">
-            Hardware <span class="text-yellow-500 text-shadow-lg">Solutions.</span>
-        </h1>
-        <p class="text-gray-500 mt-4 uppercase tracking-[0.3em] text-[10px]">Verified Clinical Diagnostic Tools</p>
+    <header class="max-w-7xl mx-auto px-8 pt-20 pb-16">
+        <h4 class="text-yellow-500 font-bold uppercase tracking-[0.4em] text-[10px] mb-4 italic">The Curated Catalog</h4>
+        <h1 class="text-5xl md:text-7xl font-extrabold uppercase tracking-tighter mb-6 font-sync">Life Line <br> <span class="italic font-light text-gray-400 text-4xl md:text-6xl tracking-normal">Medical Equipment.</span></h1>
+        <p class="text-gray-500 max-w-xl text-lg">Essential diagnostic and therapeutic tools verified for clinical precision and operational reliability.</p>
     </header>
 
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-        <div class="product-card">
-            <div class="img-container"><img src="tens.jpg" alt="TENS"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">Physio TENS Unit</h3>
-                <p class="text-gray-400 text-xs my-4">Advanced Pulse Therapy</p>
-                <a href="https://amzn.to/4sJ9nFQ" target="_blank" class="btn-amazon">Buy on Amazon</a>
+    <section class="max-w-7xl mx-auto px-8 pb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col justify-between">
+                <div>
+                    <img src="omron.jpg" alt="Omron BP Monitor" class="product-image w-full h-64 object-contain rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold mb-2">Omron Blood Pressure Monitor</h3>
+                    <p class="text-gray-500 text-sm mb-6">Gold standard for non-invasive clinical blood pressure measurement.</p>
+                </div>
+                <a href="YOUR_AMAZON_AFFILIATE_LINK" class="btn-gold w-full py-4 rounded-xl font-black uppercase tracking-widest text-xs">View on Amazon</a>
             </div>
-        </div>
 
-        <div class="product-card">
-            <div class="img-container"><img src="bodyfat.jpg" alt="Body Fat"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">Body Fat Monitor</h3>
-                <p class="text-gray-400 text-xs my-4">Composition Analyzer</p>
-                <a href="https://amzn.to/4sTtQYK" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col justify-between">
+                <div>
+                    <img src="tens.jpg" alt="TENS Unit" class="product-image w-full h-64 object-contain rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold mb-2">Dual Channel TENS Unit</h3>
+                    <p class="text-gray-500 text-sm mb-6">Advanced pain management and muscle stimulation for therapeutic settings.</p>
+                </div>
+                <a href="YOUR_AMAZON_AFFILIATE_LINK" class="btn-gold w-full py-4 rounded-xl font-black uppercase tracking-widest text-xs">View on Amazon</a>
             </div>
-        </div>
 
-        <div class="product-card">
-            <div class="img-container"><img src="kneemassager.jpg" alt="Knee"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">Heat Knee Massager</h3>
-                <p class="text-gray-400 text-xs my-4">Joint Recovery Therapy</p>
-                <a href="https://amzn.to/3ZmXZC3" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col justify-between">
+                <div>
+                    <img src="pulse.jpg" alt="Pulse Oximeter" class="product-image w-full h-64 object-contain rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold mb-2">Handheld Pulse Oximeter</h3>
+                    <p class="text-gray-500 text-sm mb-6">Critical monitoring for $SpO_2$ and heart rate during patient evaluation.</p>
+                </div>
+                <a href="YOUR_AMAZON_AFFILIATE_LINK" class="btn-gold w-full py-4 rounded-xl font-black uppercase tracking-widest text-xs">View on Amazon</a>
             </div>
-        </div>
 
-        <div class="product-card">
-            <div class="img-container"><img src="tenst-30spiral.jpg" alt="Spiral"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">TENS T-30 Spiral</h3>
-                <p class="text-gray-400 text-xs my-4">Professional Therapy Cables</p>
-                <a href="https://amzn.to/4pRH4lZ" target="_blank" class="btn-amazon">Buy on Amazon</a>
             </div>
-        </div>
+    </section>
 
-        <div class="product-card">
-            <div class="img-container"><img src="omronbp.jpg" alt="Omron"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">Omron BP Monitor</h3>
-                <p class="text-gray-400 text-xs my-4">Automatic Digital Pressure</p>
-                <a href="https://amzn.to/3YNYRj1" target="_blank" class="btn-amazon">Buy on Amazon</a>
-            </div>
+    <section id="inquiry" class="max-w-7xl mx-auto px-8 py-24 border-t border-white/5 text-center">
+        <h2 class="text-3xl font-black uppercase italic tracking-tighter mb-4 font-sync">Bulk <span class="text-yellow-500">Inquiry.</span></h2>
+        <p class="text-gray-500 mb-12 uppercase tracking-widest text-[10px]">For Medical Camps and Institutional Sourcing</p>
+        
+        <div class="glass-card rounded-[3rem] p-2 md:p-8 max-w-5xl mx-auto">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD_X-Jm8jLXDmRERvjmJ96/viewform?embedded=true" 
+                    width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" class="rounded-2xl">Loading Form…</iframe>
         </div>
+    </section>
 
-        <div class="product-card">
-            <div class="img-container"><img src="Control%20D%20Spirometer%203.jpg" alt="Spirometer"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">Control D Spirometer</h3>
-                <p class="text-gray-400 text-xs my-4">Lung Function Trainer</p>
-                <a href="https://amzn.to/3LP3GWd" target="_blank" class="btn-amazon">Buy on Amazon</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="img-container"><img src="Medical%20Vein%20Detection%20Tool.jpg" alt="Vein Finder"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">Vein Detection Tool</h3>
-                <p class="text-gray-400 text-xs my-4">Clinical Finder Device</p>
-                <a href="https://amzn.to/4bhDazn" target="_blank" class="btn-amazon">Buy on Amazon</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="img-container"><img src="Portronics%20Cleansify%20Ear%20Endoscope.jpg" alt="Ear"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">Cleansify Endoscope</h3>
-                <p class="text-gray-400 text-xs my-4">Smart Visual Cleaning</p>
-                <a href="https://amzn.to/3NWZS5V" target="_blank" class="btn-amazon">Buy on Amazon</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="img-container"><img src="amiciCare%20WiFi%20Oral%20Endoscope%20with%206-LED%20Light.jpg" alt="Oral"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">WiFi Oral Endoscope</h3>
-                <p class="text-gray-400 text-xs my-4">6-LED Dental Imaging</p>
-                <a href="https://amzn.to/4pVbtzH" target="_blank" class="btn-amazon">Buy on Amazon</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="img-container"><img src="Sunfox%20Spandan%20Pro%20Portable%20ECG%20Machine.jpg" alt="ECG"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg">Spandan Pro ECG</h3>
-                <p class="text-gray-400 text-xs my-4">Portable Clinical ECG</p>
-                <a href="https://amzn.to/4b86dVX" target="_blank" class="btn-amazon">Buy on Amazon</a>
-            </div>
-        </div>
-
-    </div>
-
-    <footer class="mt-32 border-t border-white/10 pt-12 pb-20 text-center">
-        <div class="max-w-3xl mx-auto px-6">
-            <h4 class="text-[10px] font-black uppercase tracking-[0.4em] text-yellow-500 mb-4">Legal Disclaimer</h4>
-            <p class="text-[11px] text-gray-500 leading-relaxed font-medium italic">
-                "As an Amazon Associate, I earn from qualifying purchases. This means that if you click on one of the product links and make a purchase on Amazon, I may receive a small commission at no additional cost to you. All product recommendations are based on clinical relevance."
-            </p>
-            <div class="mt-8 text-[9px] text-gray-700 uppercase tracking-widest font-bold">
-                Thoufiq Ahamed | Clinical Solutions © 2026
-            </div>
-        </div>
+    <footer class="border-t border-white/5 py-20 text-center">
+        <p class="text-[10px] text-gray-600 mb-8 italic">"As an Amazon Associate, I earn from qualifying Life Line Equipment purchases."</p>
+        <p class="text-[9px] font-sync text-gray-800 uppercase tracking-[0.5em]">Thoufiq Ahamed © 2026</p>
     </footer>
 
 </body>
