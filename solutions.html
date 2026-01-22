@@ -3,64 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solutions | Healthcare Tech by Thoufiq Ahamed</title>
+    <title>Solutions & Gear | Thoufiq Ahamed</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #0f172a; color: white; font-family: 'Inter', sans-serif; }
-        .solution-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s ease; }
-        .solution-card:hover { border-color: #3b82f6; background: rgba(59, 130, 246, 0.05); transform: translateY(-5px); }
-        .gradient-text { background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .product-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1.5rem; transition: 0.3s; display: flex; flex-direction: column; height: 100%; }
+        .product-card:hover { border-color: #fbbf24; background: rgba(251, 191, 36, 0.05); transform: translateY(-3px); }
+        .amazon-gold { background: #fbbf24; color: #000; font-weight: 900; }
+        .badge { background: rgba(251, 191, 36, 0.1); color: #fbbf24; padding: 4px 10px; border-radius: 99px; font-size: 9px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
     </style>
 </head>
 <body class="min-h-screen">
 
-    <nav class="p-6 flex justify-between items-center border-b border-white/10">
-        <a href="index.html" class="text-sm font-bold uppercase tracking-widest flex items-center gap-2">
-            <span>←</span> Back to Home
-        </a>
-        <img src="favicon.png" onerror="this.src='favicon.PNG'" class="w-8 h-8 rounded">
+    <nav class="p-6 border-b border-white/10 flex justify-between items-center bg-slate-950/90 backdrop-blur-md sticky top-0 z-50">
+        <a href="index.html" class="text-xs font-bold uppercase tracking-widest flex items-center gap-2"><span>←</span> Home</a>
+        <div class="text-[10px] font-bold text-gray-500 tracking-widest uppercase">Consultant Catalog 2026</div>
     </nav>
 
-    <header class="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h1 class="text-5xl font-black mb-6 tracking-tighter">Strategic <span class="gradient-text">Solutions.</span></h1>
-        <p class="text-gray-400 text-lg">Curated technology and systems I implement to scale healthcare operations.</p>
-    </header>
-
-    <main class="max-w-6xl mx-auto px-6 pb-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <main class="max-w-6xl mx-auto px-6 py-12">
         
-        <div class="solution-card p-10 rounded-[2.5rem]">
-            <div class="flex justify-between items-start mb-6">
-                <h2 class="text-3xl font-black">Workforce <br>Automation</h2>
-                <span class="bg-blue-600/20 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Top Partner</span>
+        <div class="mb-20">
+            <h2 class="text-xl font-black mb-8 border-l-4 border-blue-500 pl-4 uppercase italic text-blue-400">Software Implementations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="product-card p-8 border-blue-500/20">
+                    <h3 class="text-2xl font-black mb-2 italic">BusinessTime™</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Automated workforce attendance system. Sensor-based tracking for hospital shifts and payroll accuracy.</p>
+                    <a href="https://wa.me/919385352585?text=Interested+in+BusinessTime+Setup" class="bg-blue-600 text-white text-center py-4 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-blue-700 transition-all">Book Implementation Audit</a>
+                </div>
+                <div class="product-card p-8 border-emerald-500/20">
+                    <h3 class="text-2xl font-black mb-2 italic text-emerald-400">WhatsApp Health API</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Automated patient engagement, appointment reminders, and follow-up sequences to grow your OPD.</p>
+                    <a href="https://wa.me/919385352585?text=Interested+in+WhatsApp+Automation" class="bg-emerald-600 text-white text-center py-4 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Setup Growth Engine</a>
+                </div>
             </div>
-            <p class="text-gray-400 mb-8 leading-relaxed">
-                Implementation of <strong>BusinessTime</strong> automated attendance systems. Eliminate manual registers and biometric failures with sensor-based tracking designed for hospital shifts.
-            </p>
-            <ul class="space-y-3 mb-10 text-sm text-gray-300">
-                <li class="flex items-center gap-2">✅ Auto-Payroll Integration</li>
-                <li class="flex items-center gap-2">✅ Shift-wise Attendance Tracking</li>
-                <li class="flex items-center gap-2">✅ Mobile-First Management</li>
-            </ul>
-            <a href="https://wa.me/919385352585?text=I'm+interested+in+BusinessTime+Implementation" class="inline-block w-full text-center bg-blue-600 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all">Book Installation Audit</a>
         </div>
 
-        <div class="solution-card p-10 rounded-[2.5rem]">
-            <h2 class="text-3xl font-black mb-6">Paperless <br>IHMS</h2>
-            <p class="text-gray-400 mb-8 leading-relaxed">
-                Full-scale Hospital Management Information Systems. From OPD registration to Pharmacy and Lab modules, I ensure your IT ecosystem is HIPAA compliant and fast.
-            </p>
-            <ul class="space-y-3 mb-10 text-sm text-gray-300">
-                <li class="flex items-center gap-2">✅ Cloud-Based Architecture</li>
-                <li class="flex items-center gap-2">✅ Patient Portal Setup</li>
-                <li class="flex items-center gap-2">✅ Multi-Department Sync</li>
-            </ul>
-            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="inline-block w-full text-center border border-white/20 py-4 rounded-2xl font-bold hover:bg-white hover:text-black transition-all">Request Demo</a>
+        <div>
+            <h2 class="text-xl font-black mb-8 border-l-4 border-yellow-500 pl-4 uppercase italic text-yellow-500">Curated Diagnostic Gear</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Diagnostic</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Accu-Chek Active</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Blood Glucose Monitor.</p>
+                    <a href="https://amzn.to/4sJ9nFQ" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Clinic Std</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Digital BP Monitor</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Omron High-Precision.</p>
+                    <a href="https://amzn.to/4sTtQYK" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Essential</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Pulse Oximeter</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Oxygen Saturation Sensor.</p>
+                    <a href="https://amzn.to/3ZmXZC3" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Camp Tool</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Thermometer</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Digital Infrared Sensor.</p>
+                    <a href="https://amzn.to/4pRH4lZ" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Physio</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">TENS Machine</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Pain Relief Massager.</p>
+                    <a href="https://amzn.to/3YNYRj1" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Advanced</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Portable ECG</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Smart Cardiac Monitor.</p>
+                    <a href="https://amzn.to/3LP3GWd" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Clinic Gear</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Stethoscope</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">High Acoustic Sensitivity.</p>
+                    <a href="https://amzn.to/4bhDazn" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Portable</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Nebulizer</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Ultrasonic Mesh Tech.</p>
+                    <a href="https://amzn.to/3NWZS5V" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Specialty</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Fetal Doppler</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Baby Heartbeat Monitor.</p>
+                    <a href="https://amzn.to/4pVbtzH" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+                <div class="product-card p-5">
+                    <span class="badge mb-3 w-fit">Emergency</span>
+                    <h4 class="text-[13px] font-bold mb-1 leading-tight">Portable Suction</h4>
+                    <p class="text-[10px] text-gray-400 mb-4 flex-grow">Clinical Vacuum Pump.</p>
+                    <a href="https://amzn.to/4b86dVX" target="_blank" class="amazon-gold text-center py-3 rounded-lg text-[10px] uppercase">View on Amazon</a>
+                </div>
+
+            </div>
         </div>
 
     </main>
 
-    <footer class="py-12 text-center border-t border-white/5 opacity-50 text-xs tracking-widest uppercase">
-        © 2026 Thoufiq Ahamed | Solutions & Partnerships
+    <footer class="py-12 border-t border-white/5 text-center px-6">
+        <p class="text-[9px] text-gray-600 uppercase tracking-widest mb-2">As an Amazon Associate, I earn from qualifying purchases.</p>
+        <p class="text-[10px] text-gray-500 font-bold">Thoufiq Ahamed © 2026 | Healthcare Agency</p>
     </footer>
 
 </body>
