@@ -3,48 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Line Equipment | Thoufiq Ahamed</title>
+    <title>Inventory | Thoufiq Ahamed</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@300;400;800&display=swap');
-        
         body { background: #020617; color: white; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .font-sync { font-family: 'Syncopate', sans-serif; }
-        
-        .bg-medical { 
-            background-color: #020617;
-            background-image: radial-gradient(at 100% 0%, hsla(210,100%,15%,1) 0, transparent 50%), 
-                              radial-gradient(at 0% 100%, hsla(220,100%,10%,1) 0, transparent 50%);
-            background-attachment: fixed;
-        }
-
-        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(15px); transition: 0.4s; }
-        .glass-card:hover { border-color: #fbbf24; transform: translateY(-5px); }
-        
-        .btn-gold { background: #fbbf24; color: #000; transition: 0.4s ease; display: inline-flex; align-items: center; justify-content: center; }
-        
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
-            z-index: 999;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-        }
-        .whatsapp-float:hover { transform: scale(1.1); background-color: #128c7e; }
-
-        .product-image { filter: grayscale(100%); transition: 0.5s; }
-        .glass-card:hover .product-image { filter: grayscale(0%); transform: scale(1.05); }
+        .bg-medical { background-color: #020617; background-image: radial-gradient(at 100% 0%, hsla(210,100%,15%,1) 0, transparent 50%), radial-gradient(at 0% 100%, hsla(220,100%,10%,1) 0, transparent 50%); background-attachment: fixed; }
+        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(15px); transition: 0.4s; height: 100%; display: flex; flex-direction: column; }
+        .btn-gold { background: #fbbf24; color: #000; transition: 0.4s ease; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; box-shadow: 2px 2px 15px rgba(0,0,0,0.4); z-index: 999; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+        .product-image { width: 100%; height: 240px; object-fit: contain; border-radius: 1rem; margin-bottom: 1.5rem; background: white; padding: 10px; }
     </style>
 </head>
 <body class="bg-medical min-h-screen">
@@ -58,63 +27,49 @@
             <a href="index.html" class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-lg font-sync text-xl">T</a>
             <span class="text-sm font-bold tracking-[0.3em] uppercase">Thoufiq Ahamed</span>
         </div>
-        <div class="flex gap-8 items-center">
-            <a href="index.html" class="text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-yellow-500 transition">Back to Home</a>
-            <a href="#inquiry" class="bg-white text-black px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-yellow-500 transition">Bulk Inquiry</a>
-        </div>
+        <a href="index.html" class="text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-yellow-500 transition">Back to Home</a>
     </nav>
 
     <header class="max-w-7xl mx-auto px-8 pt-20 pb-16">
-        <h4 class="text-yellow-500 font-bold uppercase tracking-[0.4em] text-[10px] mb-4 italic">The Curated Catalog</h4>
-        <h1 class="text-5xl md:text-7xl font-extrabold uppercase tracking-tighter mb-6 font-sync">Life Line <br> <span class="italic font-light text-gray-400 text-4xl md:text-6xl tracking-normal">Medical Equipment.</span></h1>
-        <p class="text-gray-500 max-w-xl text-lg">Essential diagnostic and therapeutic tools verified for clinical precision and operational reliability.</p>
+        <h4 class="text-yellow-500 font-bold uppercase tracking-[0.4em] text-[10px] mb-4 italic">Life Line Equipment</h4>
+        <h1 class="text-5xl md:text-7xl font-extrabold uppercase tracking-tighter mb-6 font-sync">Clinical <br> <span class="italic font-light text-gray-400 text-4xl md:text-6xl tracking-normal">Inventory.</span></h1>
     </header>
 
     <section class="max-w-7xl mx-auto px-8 pb-32">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col justify-between">
-                <div>
-                    <img src="omron.jpg" alt="Omron BP Monitor" class="product-image w-full h-64 object-contain rounded-2xl mb-6">
-                    <h3 class="text-xl font-bold mb-2">Omron Blood Pressure Monitor</h3>
-                    <p class="text-gray-500 text-sm mb-6">Gold standard for non-invasive clinical blood pressure measurement.</p>
-                </div>
-                <a href="YOUR_AMAZON_AFFILIATE_LINK" class="btn-gold w-full py-4 rounded-xl font-black uppercase tracking-widest text-xs">View on Amazon</a>
+            <div class="glass-card p-6 rounded-3xl">
+                <img src="tens.jpg" alt="Physio TENS Unit" class="product-image">
+                <h3 class="font-bold text-lg mb-1">Physio TENS Unit</h3>
+                <p class="text-gray-500 text-xs mb-6">Advanced Pulse Therapy</p>
+                <div class="mt-auto"><a href="#" class="btn-gold w-full py-3 rounded-xl text-[10px] uppercase tracking-widest">Buy on Amazon</a></div>
             </div>
 
-            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col justify-between">
-                <div>
-                    <img src="tens.jpg" alt="TENS Unit" class="product-image w-full h-64 object-contain rounded-2xl mb-6">
-                    <h3 class="text-xl font-bold mb-2">Dual Channel TENS Unit</h3>
-                    <p class="text-gray-500 text-sm mb-6">Advanced pain management and muscle stimulation for therapeutic settings.</p>
-                </div>
-                <a href="YOUR_AMAZON_AFFILIATE_LINK" class="btn-gold w-full py-4 rounded-xl font-black uppercase tracking-widest text-xs">View on Amazon</a>
+            <div class="glass-card p-6 rounded-3xl">
+                <img src="Control D Spirometer 3.jpg" alt="Spirometer" class="product-image">
+                <h3 class="font-bold text-lg mb-1">Control D Spirometer</h3>
+                <p class="text-gray-500 text-xs mb-6">Lung Function Trainer</p>
+                <div class="mt-auto"><a href="#" class="btn-gold w-full py-3 rounded-xl text-[10px] uppercase tracking-widest">Buy on Amazon</a></div>
             </div>
 
-            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col justify-between">
-                <div>
-                    <img src="pulse.jpg" alt="Pulse Oximeter" class="product-image w-full h-64 object-contain rounded-2xl mb-6">
-                    <h3 class="text-xl font-bold mb-2">Handheld Pulse Oximeter</h3>
-                    <p class="text-gray-500 text-sm mb-6">Critical monitoring for $SpO_2$ and heart rate during patient evaluation.</p>
-                </div>
-                <a href="YOUR_AMAZON_AFFILIATE_LINK" class="btn-gold w-full py-4 rounded-xl font-black uppercase tracking-widest text-xs">View on Amazon</a>
+            <div class="glass-card p-6 rounded-3xl">
+                <img src="Medical Vein Detection Tool.jpg" alt="Vein Finder" class="product-image">
+                <h3 class="font-bold text-lg mb-1">Vein Detection Tool</h3>
+                <p class="text-gray-500 text-xs mb-6">Clinical Visual Aid</p>
+                <div class="mt-auto"><a href="#" class="btn-gold w-full py-3 rounded-xl text-[10px] uppercase tracking-widest">Buy on Amazon</a></div>
             </div>
 
+            <div class="glass-card p-6 rounded-3xl">
+                <img src="Sunfox Spandan Pro Portable ECG Machine.jpg" alt="ECG Machine" class="product-image">
+                <h3 class="font-bold text-lg mb-1">Spandan Pro ECG</h3>
+                <p class="text-gray-500 text-xs mb-6">Portable ECG Monitor</p>
+                <div class="mt-auto"><a href="#" class="btn-gold w-full py-3 rounded-xl text-[10px] uppercase tracking-widest">Buy on Amazon</a></div>
             </div>
-    </section>
 
-    <section id="inquiry" class="max-w-7xl mx-auto px-8 py-24 border-t border-white/5 text-center">
-        <h2 class="text-3xl font-black uppercase italic tracking-tighter mb-4 font-sync">Bulk <span class="text-yellow-500">Inquiry.</span></h2>
-        <p class="text-gray-500 mb-12 uppercase tracking-widest text-[10px]">For Medical Camps and Institutional Sourcing</p>
-        
-        <div class="glass-card rounded-[3rem] p-2 md:p-8 max-w-5xl mx-auto">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD_X-Jm8jLXDmRERvjmJ96/viewform?embedded=true" 
-                    width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" class="rounded-2xl">Loading Form…</iframe>
         </div>
     </section>
 
     <footer class="border-t border-white/5 py-20 text-center">
-        <p class="text-[10px] text-gray-600 mb-8 italic">"As an Amazon Associate, I earn from qualifying Life Line Equipment purchases."</p>
         <p class="text-[9px] font-sync text-gray-800 uppercase tracking-[0.5em]">Thoufiq Ahamed © 2026</p>
     </footer>
 
