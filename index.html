@@ -3,101 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoufiq Ahamed | Clinical Consultant & Strategist</title>
+    <title>Thoufiq Ahamed | Clinical Operations & Workforce Strategy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@300;400;800&display=swap');
         
-        body { background: #020617; color: white; font-family: 'Inter', sans-serif; }
+        body { background: #020617; color: white; font-family: 'Plus Jakarta Sans', sans-serif; }
         .font-sync { font-family: 'Syncopate', sans-serif; }
-        .hero-glow { background: radial-gradient(circle at 80% 20%, #1e3a8a 0%, #020617 50%); }
-        
-        .glass-panel { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
-        .btn-action { background: #fbbf24; color: #000; font-weight: 900; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(251, 191, 36, 0.2); }
-        .btn-action:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(251, 191, 36, 0.5); background: #fff; }
-        
-        .text-stroke { -webkit-text-stroke: 1px rgba(255,255,255,0.4); color: transparent; }
+        .bg-mesh { 
+            background-color: #020617;
+            background-image: radial-gradient(at 0% 0%, hsla(220,100%,15%,1) 0, transparent 50%), 
+                              radial-gradient(at 50% 0%, hsla(215,100%,10%,1) 0, transparent 50%);
+        }
+        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); }
+        .accent-border { border-left: 4px solid #fbbf24; }
+        .text-gradient { background: linear-gradient(to right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="hero-glow min-h-screen">
+<body class="bg-mesh min-h-screen">
 
-    <nav class="max-w-7xl mx-auto flex justify-between items-center p-8">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center p-8 sticky top-0 z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/5">
         <div class="flex items-center gap-3">
-            <div class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-lg font-sync">T</div>
-            <span class="text-sm font-bold tracking-[0.3em] uppercase hidden md:block">Thoufiq Ahamed</span>
+            <div class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-lg font-sync text-xl">T</div>
+            <span class="text-sm font-bold tracking-[0.3em] uppercase">Thoufiq Ahamed</span>
         </div>
-        <div class="flex gap-4 md:gap-8 items-center">
-            <a href="solutions.html" class="text-[10px] font-black uppercase tracking-widest hover:text-yellow-500 transition">Inventory</a>
-            <a href="https://businesstime.app/thoufiq" target="_blank" class="btn-action px-6 py-2 rounded-full text-[10px] uppercase tracking-widest">Book Appointment</a>
+        <div class="flex gap-8 items-center">
+            <a href="solutions.html" class="text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-yellow-500 transition">Hardware</a>
+            <a href="#contact" class="bg-white text-black px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-yellow-500 transition">Get Started</a>
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-8 pt-20 pb-32 grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-            <div class="inline-block bg-blue-500/10 border border-blue-500/20 text-blue-400 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-8">
-                Available for Consultations
-            </div>
-            <h1 class="text-6xl md:text-8xl font-black italic uppercase tracking-tighter leading-none mb-8">
-                Clinical <br> <span class="text-stroke">Strategy.</span>
+    <main class="max-w-7xl mx-auto px-8 pt-24 pb-32">
+        <div class="max-w-4xl">
+            <h4 class="text-yellow-500 font-bold uppercase tracking-[0.4em] text-[10px] mb-6 italic">Clinical Operations Strategist</h4>
+            <h1 class="text-5xl md:text-8xl font-extrabold uppercase tracking-tighter leading-[0.9] mb-10 text-gradient">
+                Transforming <br> <span class="italic font-light">Workforce</span> Efficiency.
             </h1>
-            <p class="text-gray-400 text-xl font-light leading-relaxed mb-10 max-w-lg">
-                High-impact solutions for <strong>Medical Camps</strong>, <strong>Brand Promotions</strong>, and clinical workflow optimization. Powered by professional expertise.
+            <p class="text-gray-400 text-xl md:text-2xl font-light leading-relaxed mb-12 max-w-2xl">
+                Expert implementation of <strong>Businesstime.app</strong> for automated employee attendance, camp logistics, and medical brand promotions.
             </p>
             
             <div class="flex flex-wrap gap-6">
-                <a href="https://businesstime.app/thoufiq" target="_blank" class="btn-action px-12 py-6 rounded-2xl text-sm uppercase tracking-widest">
-                    Schedule via BusinessTime
+                <a href="#digital-transformation" class="bg-yellow-500 text-black px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm shadow-xl shadow-yellow-500/10">
+                    View Solutions
                 </a>
-                <a href="solutions.html" class="glass-panel px-12 py-6 rounded-2xl text-sm font-black uppercase tracking-widest hover:bg-white/10 transition-all">
-                    Clinical Tools
+                <a href="solutions.html" class="glass-card px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/5 transition">
+                    Inventory Catalog
                 </a>
-            </div>
-        </div>
-
-        <div class="relative">
-            <div class="absolute -inset-10 bg-yellow-500/5 blur-[100px] rounded-full"></div>
-            <div class="glass-panel p-4 rounded-[4rem]">
-                <img src="tens.jpg" class="w-full h-[500px] object-cover rounded-[3rem] grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-1000" alt="Thoufiq Ahamed Clinical">
             </div>
         </div>
     </main>
 
-    <section class="max-w-7xl mx-auto px-8 py-24 border-t border-white/5">
-        <div class="grid md:grid-cols-3 gap-8">
+    <section id="digital-transformation" class="max-w-7xl mx-auto px-8 py-24 border-t border-white/5">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="glass-card p-12 rounded-[3rem] relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 blur-3xl"></div>
+                <h3 class="font-sync text-yellow-500 text-sm mb-6 uppercase tracking-widest">Core Technology</h3>
+                <h2 class="text-4xl font-black italic uppercase tracking-tighter mb-6">Businesstime.app <br>Integration</h2>
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    I specialize in migrating traditional clinical environments to the <strong>Businesstime.app</strong> ecosystem. 
+                    Eliminate manual logs and transform how you track employee attendance during large-scale medical camps and brand activations.
+                </p>
+                <ul class="space-y-4 text-sm font-bold uppercase tracking-wide text-gray-300">
+                    <li class="flex items-center gap-3"><span class="text-yellow-500">✓</span> Real-time Attendance Tracking</li>
+                    <li class="flex items-center gap-3"><span class="text-yellow-500">✓</span> Geo-fenced Camp Check-ins</li>
+                    <li class="flex items-center gap-3"><span class="text-yellow-500">✓</span> Automated Workforce Reporting</li>
+                </ul>
+            </div>
             
-            <div class="glass-panel p-12 rounded-[3rem] hover:border-yellow-500 transition-all">
-                <h3 class="text-yellow-500 font-black text-[10px] uppercase tracking-[0.3em] mb-6">Execution</h3>
-                <h4 class="font-sync text-xl mb-4">Medical Camps</h4>
-                <p class="text-gray-500 text-sm leading-relaxed mb-8">Strategic planning and on-ground management for specialized medical screening camps and community health events.</p>
-                <a href="https://businesstime.app/thoufiq" target="_blank" class="text-xs font-black uppercase tracking-widest text-white border-b border-yellow-500 pb-1 hover:text-yellow-500 transition">Inquire Now</a>
+            <div class="space-y-12">
+                <div class="accent-border pl-8">
+                    <h4 class="font-sync text-lg mb-2 uppercase">Medical Camps</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Scaling medical camps with digital logistics. From staff positioning to on-ground attendance, I ensure your outreach is data-driven.</p>
+                </div>
+                <div class="accent-border pl-8">
+                    <h4 class="font-sync text-lg mb-2 uppercase">Brand Promotions</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Strategic promotion for medical hardware brands, utilizing clinical authority to drive high-value healthcare partnerships.</p>
+                </div>
             </div>
-
-            <div class="glass-panel p-12 rounded-[3rem] hover:border-yellow-500 transition-all">
-                <h3 class="text-yellow-500 font-black text-[10px] uppercase tracking-[0.3em] mb-6">Marketing</h3>
-                <h4 class="font-sync text-xl mb-4">Brand Promotions</h4>
-                <p class="text-gray-500 text-sm leading-relaxed mb-8">Elevating healthcare brands through professional promotion, clinical backing, and targeted medical networking.</p>
-                <a href="https://businesstime.app/thoufiq" target="_blank" class="text-xs font-black uppercase tracking-widest text-white border-b border-yellow-500 pb-1 hover:text-yellow-500 transition">Partner with Me</a>
-            </div>
-
-            <div class="glass-panel p-12 rounded-[3rem] hover:border-yellow-500 transition-all">
-                <h3 class="text-yellow-500 font-black text-[10px] uppercase tracking-[0.3em] mb-6">Clinical</h3>
-                <h4 class="font-sync text-xl mb-4">Expert Advice</h4>
-                <p class="text-gray-500 text-sm leading-relaxed mb-8">One-on-one clinical consultation for diagnostic hardware selection and professional workflow improvement.</p>
-                <a href="https://businesstime.app/thoufiq" target="_blank" class="text-xs font-black uppercase tracking-widest text-white border-b border-yellow-500 pb-1 hover:text-yellow-500 transition">Book Slot</a>
-            </div>
-
         </div>
     </section>
 
-    <footer class="mt-20 border-t border-white/5 py-16 text-center">
-        <div class="max-w-4xl mx-auto px-6">
-            <p class="text-[11px] text-gray-600 font-medium italic mb-8">
-                Consultations are officially booked via <strong>businesstime.app</strong>. 
-                Hardware links are provided via the Amazon Associates program.
-            </p>
-            <div class="text-[10px] font-sync text-gray-800 uppercase tracking-[0.6em]">
-                Thoufiq Ahamed | 2026
+    <section class="max-w-7xl mx-auto px-8 py-24 border-t border-white/5">
+        <h2 class="text-2xl font-black uppercase italic mb-12 tracking-widest">Service <span class="text-yellow-500">Pillars</span></h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-10 rounded-3xl hover:border-yellow-500 transition">
+                <h5 class="text-yellow-500 font-black mb-4 uppercase text-xs">Employee Attendance</h5>
+                <p class="text-gray-400 text-sm leading-relaxed">Transforming traditional attendance into a seamless digital experience using Businesstime app technology.</p>
             </div>
+            <div class="glass-card p-10 rounded-3xl hover:border-yellow-500 transition">
+                <h5 class="text-yellow-500 font-black mb-4 uppercase text-xs">Workforce Management</h5>
+                <p class="text-gray-400 text-sm leading-relaxed">Direct consultation on staff scheduling and performance tracking for clinics and mobile medical units.</p>
+            </div>
+            <div class="glass-card p-10 rounded-3xl hover:border-yellow-500 transition">
+                <h5 class="text-yellow-500 font-black mb-4 uppercase text-xs">Hardware Strategy</h5>
+                <p class="text-gray-400 text-sm leading-relaxed">Access my curated inventory of clinical tools designed for the modern medical environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="mt-20 border-t border-white/5 py-20 text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-3xl font-black uppercase italic mb-8">Ready to <span class="text-yellow-500">Transform?</span></h2>
+            <p class="text-gray-500 text-sm mb-12 leading-relaxed">
+                Available for clinical consultancy, medical camp organization, and brand promotion partnerships.
+            </p>
+            <div class="flex justify-center gap-6 mb-12 text-[10px] font-black uppercase tracking-widest text-gray-700">
+                <span>Attendence Solutions</span>
+                <span>•</span>
+                <span>Medical Camps</span>
+                <span>•</span>
+                <span>Inventory</span>
+            </div>
+            <p class="text-[10px] text-gray-800 italic uppercase tracking-[0.4em]">
+                Thoufiq Ahamed | Clinical Strategy 2026
+            </p>
         </div>
     </footer>
 
