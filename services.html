@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Thoufiq Ahamed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { background: #010409; color: #e6edf3; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bg-vibrant { 
+            background: radial-gradient(circle at 100% 0%, #004a7c 0%, transparent 50%);
+            background-color: #010409;
+        }
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(12px); padding: 3rem; border-radius: 3rem;
+        }
+        .service-tag { color: #00d2ff; font-weight: 800; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; margin-bottom: 1rem; display: block; }
+    </style>
+</head>
+<body class="bg-vibrant min-h-screen">
+
+    <nav class="max-w-7xl mx-auto flex justify-between items-center p-8">
+        <a href="index.html" class="text-xs font-bold tracking-widest uppercase text-gray-500 hover:text-[#00d2ff]">← Home</a>
+        <a href="solutions.html" class="text-xs font-bold tracking-widest uppercase text-[#00d2ff]">Product Inventory</a>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-8 py-16">
+        <h1 class="text-5xl md:text-7xl font-black uppercase mb-20 tracking-tighter">Our <span class="text-[#00d2ff] italic">Core Offers.</span></h1>
+
+        <div class="grid gap-12">
+            
+            <div class="glass-card">
+                <span class="service-tag">Phase 01</span>
+                <h2 class="text-3xl font-bold uppercase mb-6">Digital Transformation</h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-4xl">
+                    We help hospitals and diagnostic centers move away from outdated systems. We implement paperless patient management, integrated cloud-based reporting, and modern digital health infrastructure that saves time and increases clinical accuracy.
+                </p>
+                <div class="flex gap-4 text-[10px] font-bold uppercase text-[#00d2ff]">
+                    <span class="bg-[#00d2ff]/10 px-4 py-2 rounded-full">Cloud Integration</span>
+                    <span class="bg-[#00d2ff]/10 px-4 py-2 rounded-full">EMR Setup</span>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <span class="service-tag">Phase 02</span>
+                <h2 class="text-3xl font-bold uppercase mb-6">Social Branding & Promotions</h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-4xl">
+                    Building a digital identity for medical professionals. We handle content strategy, social media management, and online patient acquisition through targeted branding specifically tailored for the healthcare niche.
+                </p>
+                <div class="flex gap-4 text-[10px] font-bold uppercase text-[#00d2ff]">
+                    <span class="bg-[#00d2ff]/10 px-4 py-2 rounded-full">Content Strategy</span>
+                    <span class="bg-[#00d2ff]/10 px-4 py-2 rounded-full">Lead Generation</span>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <span class="service-tag">Phase 03</span>
+                <h2 class="text-3xl font-bold uppercase mb-6">Medical Camp Logistics</h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-4xl">
+                    End-to-end execution of medical screening camps. We provide the diagnostic equipment, coordinate with local physical locations, manage staff logistics, and ensure the outreach reaches the intended patient population effectively.
+                </p>
+                <div class="flex gap-4 text-[10px] font-bold uppercase text-[#00d2ff]">
+                    <span class="bg-[#00d2ff]/10 px-4 py-2 rounded-full">Equipment Rental</span>
+                    <span class="bg-[#00d2ff]/10 px-4 py-2 rounded-full">Field Management</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-20 text-center opacity-50">
+        <p class="text-[10px] uppercase tracking-[0.4em]">Thoufiq Ahamed | Life Line Medical Consultancy</p>
+    </footer>
+
+</body>
+</html>
