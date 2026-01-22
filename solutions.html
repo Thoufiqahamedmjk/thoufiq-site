@@ -7,67 +7,116 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background: #020617; color: white; font-family: sans-serif; }
-        .product-card { background: #111827; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; display: flex; flex-direction: column; height: 100%; }
+        .product-card { background: #111827; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; display: flex; flex-direction: column; height: 100%; transition: 0.3s; }
+        .product-card:hover { border-color: #fbbf24; transform: translateY(-5px); }
         .img-container { background: white; height: 220px; display: flex; align-items: center; justify-content: center; padding: 15px; }
         .img-container img { max-height: 100%; max-width: 100%; object-fit: contain; }
-        .btn-amazon { background: #fbbf24; color: black; text-align: center; padding: 14px; border-radius: 12px; font-weight: 900; margin-top: auto; text-decoration: none; display: block; transition: 0.2s; }
-        .btn-amazon:hover { background: #f59e0b; }
+        .btn-amazon { background: #fbbf24; color: black; text-align: center; padding: 14px; border-radius: 12px; font-weight: 900; margin-top: auto; text-decoration: none; display: block; font-size: 11px; text-transform: uppercase; }
     </style>
 </head>
-<body class="p-8">
+<body class="p-6 md:p-12">
 
-    <h1 class="text-3xl font-black text-center mb-10 uppercase italic tracking-tighter">Clinical <span class="text-yellow-500">Inventory.</span></h1>
+    <header class="max-w-7xl mx-auto mb-16 text-center">
+        <h1 class="text-4xl md:text-6xl font-black italic uppercase tracking-tighter">Clinical <span class="text-yellow-500">Inventory.</span></h1>
+        <p class="text-gray-500 mt-4 font-medium uppercase tracking-widest text-xs">Verified Hardware Catalog</p>
+    </header>
 
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
         <div class="product-card">
-            <div class="img-container">
-                <img src="tens.jpg" alt="TENS Unit">
-            </div>
+            <div class="img-container"><img src="tens.jpg" alt="TENS"></div>
             <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg leading-tight text-white">Physio TENS Unit</h3>
-                <p class="text-gray-400 text-xs my-4">Advanced Pulse Therapy for Pain Relief</p>
-                <a href="https://amzn.to/4sJ9nFQ" target="_blank" class="btn-amazon">BUY ON AMAZON</a>
+                <h3 class="font-bold text-lg">Physio TENS Unit</h3>
+                <p class="text-gray-400 text-xs my-4">Advanced Pulse Therapy</p>
+                <a href="https://amzn.to/4sJ9nFQ" target="_blank" class="btn-amazon">Buy on Amazon</a>
             </div>
         </div>
 
         <div class="product-card">
-            <div class="img-container">
-                <img src="bodyfat.jpg" alt="Body Fat Scale">
-            </div>
+            <div class="img-container"><img src="bodyfat.jpg" alt="Body Fat"></div>
             <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg leading-tight text-white">Body Fat Monitor</h3>
-                <p class="text-gray-400 text-xs my-4">Clinical Body Composition Analyzer</p>
-                <a href="https://amzn.to/4sTtQYK" target="_blank" class="btn-amazon">BUY ON AMAZON</a>
+                <h3 class="font-bold text-lg">Body Fat Monitor</h3>
+                <p class="text-gray-400 text-xs my-4">Composition Analyzer</p>
+                <a href="https://amzn.to/4sTtQYK" target="_blank" class="btn-amazon">Buy on Amazon</a>
             </div>
         </div>
 
         <div class="product-card">
-            <div class="img-container">
-                <img src="kneemassager.jpg" alt="Knee Massager">
-            </div>
+            <div class="img-container"><img src="kneemassager.jpg" alt="Knee"></div>
             <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg leading-tight text-white">Heat Knee Massager</h3>
-                <p class="text-gray-400 text-xs my-4">Joint Recovery & Thermal Therapy</p>
-                <a href="https://amzn.to/3ZmXZC3" target="_blank" class="btn-amazon">BUY ON AMAZON</a>
+                <h3 class="font-bold text-lg">Heat Knee Massager</h3>
+                <p class="text-gray-400 text-xs my-4">Joint Recovery Therapy</p>
+                <a href="https://amzn.to/3ZmXZC3" target="_blank" class="btn-amazon">Buy on Amazon</a>
             </div>
         </div>
 
         <div class="product-card">
-            <div class="img-container">
-                <img src="tenst-30spiral.jpg" alt="TENS T30">
-            </div>
+            <div class="img-container"><img src="tenst-30spiral.jpg" alt="Spiral"></div>
             <div class="p-6 flex-grow flex flex-col">
-                <h3 class="font-bold text-lg leading-tight text-white">TENS T-30 Spiral</h3>
-                <p class="text-gray-400 text-xs my-4">Professional Grade Therapy Cables</p>
-                <a href="https://amzn.to/4pRH4lZ" target="_blank" class="btn-amazon">BUY ON AMAZON</a>
+                <h3 class="font-bold text-lg">TENS T-30 Spiral</h3>
+                <p class="text-gray-400 text-xs my-4">Professional Therapy Cables</p>
+                <a href="https://amzn.to/4pRH4lZ" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container"><img src="omronbp.jpg" alt="Omron"></div>
+            <div class="p-6 flex-grow flex flex-col">
+                <h3 class="font-bold text-lg">Omron BP Monitor</h3>
+                <p class="text-gray-400 text-xs my-4">Automatic Digital Pressure</p>
+                <a href="https://amzn.to/3YNYRj1" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container"><img src="Control%20D%20Spirometer%203.jpg" alt="Spirometer"></div>
+            <div class="p-6 flex-grow flex flex-col">
+                <h3 class="font-bold text-lg">Control D Spirometer</h3>
+                <p class="text-gray-400 text-xs my-4">Lung Function Trainer</p>
+                <a href="https://amzn.to/3LP3GWd" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container"><img src="Medical%20Vein%20Detection%20Tool.jpg" alt="Vein Finder"></div>
+            <div class="p-6 flex-grow flex flex-col">
+                <h3 class="font-bold text-lg">Vein Detection Tool</h3>
+                <p class="text-gray-400 text-xs my-4">Clinical Finder Device</p>
+                <a href="https://amzn.to/4bhDazn" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container"><img src="Portronics%20Cleansify%20Ear%20Endoscope.jpg" alt="Ear"></div>
+            <div class="p-6 flex-grow flex flex-col">
+                <h3 class="font-bold text-lg">Cleansify Endoscope</h3>
+                <p class="text-gray-400 text-xs my-4">Smart Visual Cleaning</p>
+                <a href="https://amzn.to/3NWZS5V" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container"><img src="amiciCare%20WiFi%20Oral%20Endoscope%20with%206-LED%20Light.jpg" alt="Oral"></div>
+            <div class="p-6 flex-grow flex flex-col">
+                <h3 class="font-bold text-lg">WiFi Oral Endoscope</h3>
+                <p class="text-gray-400 text-xs my-4">6-LED Dental Imaging</p>
+                <a href="https://amzn.to/4pVbtzH" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container"><img src="Sunfox%20Spandan%20Pro%20Portable%20ECG%20Machine.jpg" alt="ECG"></div>
+            <div class="p-6 flex-grow flex flex-col">
+                <h3 class="font-bold text-lg">Spandan Pro ECG</h3>
+                <p class="text-gray-400 text-xs my-4">Portable Clinical ECG</p>
+                <a href="https://amzn.to/4b86dVX" target="_blank" class="btn-amazon">Buy on Amazon</a>
             </div>
         </div>
 
     </div>
 
-    <footer class="mt-20 text-center text-gray-600 text-[10px] uppercase tracking-widest">
-        Step-by-Step Verified Inventory Deployment
+    <footer class="mt-24 text-center text-gray-700 text-[10px] uppercase tracking-widest italic pt-10 border-t border-white/5">
+        Thoufiq Ahamed | Verified Catalog © 2026
     </footer>
 
 </body>
