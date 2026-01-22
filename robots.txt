@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Directs Google and other search engines to your sitemap
+Sitemap: https://www.thoufiqahamed.in/sitemap.xml
