@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background: #020617; color: white; font-family: sans-serif; }
-        .product-card { background: #111827; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; display: flex; flex-direction: column; height: 100%; transition: 0.3s; }
+        .product-card { background: #111827; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; display: flex; flex-direction: column; height: 100%; transition: 0.3s ease; }
         .product-card:hover { border-color: #fbbf24; transform: translateY(-5px); }
         .img-container { background: white; height: 220px; display: flex; align-items: center; justify-content: center; padding: 15px; }
         .img-container img { max-height: 100%; max-width: 100%; object-fit: contain; }
@@ -16,9 +16,27 @@
 </head>
 <body class="p-6 md:p-12">
 
+    <nav class="max-w-7xl mx-auto flex justify-between items-center mb-10 pb-6 border-b border-white/5">
+        <a href="index.html" class="flex items-center gap-3 group">
+            <div class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-xl text-xl transition-transform group-hover:scale-110">
+                C
+            </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-black uppercase tracking-tighter group-hover:text-yellow-500 transition-colors">Clinical Inventory</span>
+                <span class="text-[9px] text-gray-500 font-bold tracking-[0.2em] uppercase">Thoufiq Ahamed</span>
+            </div>
+        </a>
+
+        <a href="index.html" class="bg-white/5 hover:bg-yellow-500 hover:text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest transition-all">
+            Home Screen
+        </a>
+    </nav>
+
     <header class="max-w-7xl mx-auto mb-16 text-center">
-        <h1 class="text-4xl md:text-6xl font-black italic uppercase tracking-tighter">Clinical <span class="text-yellow-500">Inventory.</span></h1>
-        <p class="text-gray-500 mt-4 font-medium uppercase tracking-widest text-xs">Verified Hardware Catalog</p>
+        <h1 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter">
+            Hardware <span class="text-yellow-500 text-shadow-lg">Solutions.</span>
+        </h1>
+        <p class="text-gray-500 mt-4 uppercase tracking-[0.3em] text-[10px]">Verified Clinical Diagnostic Tools</p>
     </header>
 
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -115,8 +133,16 @@
 
     </div>
 
-    <footer class="mt-24 text-center text-gray-700 text-[10px] uppercase tracking-widest italic pt-10 border-t border-white/5">
-        Thoufiq Ahamed | Verified Catalog © 2026
+    <footer class="mt-32 border-t border-white/10 pt-12 pb-20 text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h4 class="text-[10px] font-black uppercase tracking-[0.4em] text-yellow-500 mb-4">Legal Disclaimer</h4>
+            <p class="text-[11px] text-gray-500 leading-relaxed font-medium italic">
+                "As an Amazon Associate, I earn from qualifying purchases. This means that if you click on one of the product links and make a purchase on Amazon, I may receive a small commission at no additional cost to you. All product recommendations are based on clinical relevance."
+            </p>
+            <div class="mt-8 text-[9px] text-gray-700 uppercase tracking-widest font-bold">
+                Thoufiq Ahamed | Clinical Solutions © 2026
+            </div>
+        </div>
     </footer>
 
 </body>
