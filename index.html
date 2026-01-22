@@ -3,93 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoufiq Ahamed | Clinical Solutions</title>
+    <title>Thoufiq Ahamed | Clinical Consultant</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background: #020617; color: white; font-family: sans-serif; overflow-x: hidden; }
-        .hero-gradient { 
-            background: radial-gradient(circle at top right, #1e3a8a 0%, #020617 60%);
-        }
-        .glow-button {
-            box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
-            transition: 0.4s ease;
-        }
-        .glow-button:hover {
-            box-shadow: 0 0 40px rgba(251, 191, 36, 0.6);
-            transform: scale(1.05);
-        }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e3a8a 0%, #020617 60%); }
+        .service-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.3s; }
+        .service-card:hover { border-color: #fbbf24; background: rgba(255, 255, 255, 0.05); }
     </style>
 </head>
 <body class="hero-gradient min-h-screen">
 
-    <nav class="max-w-7xl mx-auto flex justify-between items-center p-8">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center p-8 border-b border-white/5">
         <div class="flex items-center gap-3">
-            <div class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-xl text-xl">
-                C
-            </div>
-            <span class="text-xl font-black uppercase tracking-tighter">Clinical Inventory</span>
+            <div class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-xl text-xl">T</div>
+            <span class="text-xl font-black uppercase tracking-tighter">Thoufiq Ahamed</span>
         </div>
-        <a href="solutions.html" class="text-xs font-black uppercase tracking-widest border-b-2 border-yellow-500 pb-1 hover:text-yellow-500 transition-colors">
-            View Solutions
-        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a href="#services" class="text-[10px] font-bold uppercase tracking-widest hover:text-yellow-500 transition">Services</a>
+            <a href="solutions.html" class="bg-yellow-500 text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest">Inventory</a>
+        </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-8 pt-20 pb-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
-        <div>
-            <h4 class="text-yellow-500 font-black uppercase tracking-[0.4em] text-xs mb-6">Medical Hardware Expert</h4>
-            <h1 class="text-6xl md:text-8xl font-black italic uppercase tracking-tighter leading-none mb-8">
-                Thoufiq <br> <span class="text-transparent" style="-webkit-text-stroke: 1px white;">Ahamed.</span>
+    <main class="max-w-7xl mx-auto px-8 pt-24 pb-32">
+        <div class="max-w-3xl">
+            <h4 class="text-yellow-500 font-black uppercase tracking-[0.4em] text-xs mb-6 italic">Professional Clinical Consultation</h4>
+            <h1 class="text-6xl md:text-8xl font-black italic uppercase tracking-tighter leading-[0.9] mb-8">
+                Expert Advice. <br> <span class="text-transparent" style="-webkit-text-stroke: 1px white;">Precision Tools.</span>
             </h1>
-            <p class="text-gray-400 text-lg max-w-md leading-relaxed mb-10">
-                Bridging the gap between clinical necessity and advanced diagnostic hardware. Curated equipment for healthcare professionals.
+            <p class="text-gray-400 text-xl leading-relaxed mb-10 font-light">
+                Providing specialized clinical consultation services and a curated inventory of diagnostic hardware for healthcare optimization.
             </p>
             
-            <div class="flex flex-wrap gap-4">
-                <a href="solutions.html" class="glow-button bg-yellow-500 text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-sm">
-                    Explore Inventory
+            <div class="flex flex-wrap gap-6">
+                <a href="mailto:your-email@example.com" class="bg-white text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-yellow-500 transition-all">
+                    Book Consultation
                 </a>
-                <div class="flex items-center gap-4 px-6 text-gray-500 text-xs font-bold uppercase tracking-widest">
-                    <span class="w-8 h-[1px] bg-gray-800"></span>
-                    10+ Verified Tools
-                </div>
+                <a href="solutions.html" class="border border-white/20 px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-sm hover:border-yellow-500 transition-all">
+                    View Inventory
+                </a>
             </div>
         </div>
-
-        <div class="relative">
-            <div class="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-            <div class="relative bg-slate-900/50 border border-white/10 p-2 rounded-[3rem] backdrop-blur-xl">
-                <img src="tens.jpg" class="w-full h-[500px] object-cover rounded-[2.5rem] opacity-80" alt="Clinical Hardware">
-            </div>
-        </div>
-
     </main>
 
-    <section class="max-w-7xl mx-auto px-8 py-24 border-t border-white/5">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-                <h3 class="text-yellow-500 font-black text-xl mb-4">01. Selection</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Every piece of hardware is hand-selected based on accuracy, durability, and clinical peer reviews.</p>
+    <section id="services" class="max-w-7xl mx-auto px-8 py-24 border-t border-white/5">
+        <h2 class="text-3xl font-black uppercase italic mb-16 tracking-tighter">Consultation <span class="text-yellow-500">Expertise.</span></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="service-card p-10 rounded-[2rem]">
+                <div class="text-yellow-500 mb-6 font-black text-4xl">01</div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Device Integration</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Expert guidance on integrating portable diagnostic tools (ECG, Spirometers, Endoscopes) into daily clinical workflows.</p>
             </div>
-            <div>
-                <h3 class="text-yellow-500 font-black text-xl mb-4">02. Integration</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Focusing on portable technology that integrates seamlessly with modern smartphone diagnostics.</p>
+
+            <div class="service-card p-10 rounded-[2rem]">
+                <div class="text-yellow-500 mb-6 font-black text-4xl">02</div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Patient Monitoring</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Strategies for remote patient monitoring using high-precision hardware to improve diagnostic outcomes.</p>
             </div>
-            <div>
-                <h3 class="text-yellow-500 font-black text-xl mb-4">03. Support</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Providing direct access to verified Amazon sources to ensure authentic clinical-grade equipment.</p>
+
+            <div class="service-card p-10 rounded-[2rem]">
+                <div class="text-yellow-500 mb-6 font-black text-4xl">03</div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Equipment Audit</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Comprehensive review and recommendation of medical grade inventory tailored to your specific practice needs.</p>
             </div>
         </div>
     </section>
 
-    <footer class="mt-20 border-t border-white/10 pt-12 pb-20 text-center">
+    <section class="max-w-7xl mx-auto px-8 py-24 bg-slate-900/50 rounded-[3rem] mb-20 border border-white/5">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <h2 class="text-3xl font-black uppercase italic tracking-tighter">Curated <span class="text-yellow-500">Hardware.</span></h2>
+                <p class="text-gray-400 mt-2">Explore my verified list of clinical-grade diagnostic equipment.</p>
+            </div>
+            <a href="solutions.html" class="bg-yellow-500 text-black px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs">Browse 10+ Products</a>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 pt-12 pb-20 text-center">
         <div class="max-w-3xl mx-auto px-6">
             <h4 class="text-[10px] font-black uppercase tracking-[0.4em] text-yellow-500 mb-4">Legal Disclaimer</h4>
             <p class="text-[11px] text-gray-500 leading-relaxed font-medium italic">
-                "As an Amazon Associate, I earn from qualifying purchases. All product links on this site lead to verified Amazon listings."
+                "As an Amazon Associate, I earn from qualifying purchases. This site provides clinical consultation and hardware recommendations."
             </p>
             <div class="mt-8 text-[9px] text-gray-700 uppercase tracking-widest font-bold">
-                Thoufiq Ahamed | Clinical Solutions © 2026
+                Thoufiq Ahamed | Clinical Consultant © 2026
             </div>
         </div>
     </footer>
