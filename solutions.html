@@ -8,103 +8,101 @@
     <style>
         body { background-color: #020617; color: white; font-family: 'Inter', sans-serif; }
         .hero-gradient { background: radial-gradient(circle at top right, #1e3a8a 0%, #020617 60%); }
-        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-blur: 12px; transition: all 0.4s ease; height: 100%; display: flex; flex-direction: column; border-radius: 2rem; overflow: hidden;}
-        .glass-card:hover { border-color: #fbbf24; transform: translateY(-8px); }
-        .btn-amazon { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #000; font-weight: 900; text-align: center; padding: 12px; border-radius: 12px; font-size: 10px; text-transform: uppercase; tracking-widest; }
-        .img-box { background: white; height: 200px; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2rem; overflow: hidden; height: 100%; display: flex; flex-direction: column; transition: 0.3s; }
+        .glass-card:hover { border-color: #fbbf24; transform: translateY(-5px); }
+        .img-box { background: white; height: 180px; display: flex; align-items: center; justify-content: center; padding: 15px; }
         .img-box img { max-height: 100%; max-width: 100%; object-fit: contain; }
+        .btn-amazon { background: #fbbf24; color: black; text-align: center; padding: 12px; border-radius: 12px; font-weight: 900; font-size: 11px; text-transform: uppercase; margin-top: auto; }
     </style>
 </head>
 <body class="hero-gradient min-h-screen">
 
-    <nav class="p-6 flex justify-between items-center border-b border-white/5 bg-slate-950/50 backdrop-blur-md">
-        <a href="index.html" class="text-xs font-black uppercase tracking-[0.3em]">← Home</a>
-        <span class="text-[10px] text-yellow-500 font-bold uppercase">Authorized Catalog</span>
+    <nav class="p-6 border-b border-white/5 bg-slate-950/50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xs font-bold uppercase tracking-widest">← Return Home</a>
+            <span class="text-[10px] bg-yellow-500/10 text-yellow-500 px-3 py-1 rounded-full font-bold">LIVE INVENTORY</span>
+        </div>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-6 py-12 text-center">
-        <h1 class="text-5xl font-black tracking-tighter mb-4 italic uppercase">Clinical <span class="text-yellow-500">Inventory.</span></h1>
-    </header>
-
-    <main class="max-w-7xl mx-auto px-6 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-black mb-12 italic uppercase tracking-tighter">Clinical <span class="text-yellow-500 underline decoration-2 underline-offset-8">Inventory.</span></h1>
         
-        <div class="glass-card">
-            <div class="img-box"><img src="https://www.accu-chek.in/sites/g/files/iitvsi1006/f/active_meter_0.png"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h4 class="font-bold text-lg mb-2">Accu-Chek Active</h4>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">Blood glucose monitoring system.</p>
-                <a href="https://amzn.to/4sJ9nFQ" target="_blank" class="btn-amazon">Buy on Amazon</a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="glass-card">
+                <div class="img-box"><img src="https://www.accu-chek.in/sites/g/files/iitvsi1006/f/active_meter_0.png"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-1">Accu-Chek Active</h3>
+                    <p class="text-gray-400 text-xs mb-6">Blood glucose monitoring system.</p>
+                    <a href="https://amzn.to/4sJ9nFQ" target="_blank" class="btn-amazon">Buy on Amazon</a>
+                </div>
             </div>
-        </div>
 
-        <div class="glass-card">
-            <div class="img-box"><img src="https://www.omronhealthcare-ap.com/Content/Uploads/Products/b8875323-9366-4e55-937b-91f16d860183/HEM-7120_L.png"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h4 class="font-bold text-lg mb-2">Omron BP Monitor</h4>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">Automatic blood pressure monitor.</p>
-                <a href="https://amzn.to/4sTtQYK" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card">
+                <div class="img-box"><img src="https://www.omronhealthcare-ap.com/Content/Uploads/Products/b8875323-9366-4e55-937b-91f16d860183/HEM-7120_L.png"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-1">Omron BP Monitor</h3>
+                    <p class="text-gray-400 text-xs mb-6">Automatic Digital Blood Pressure.</p>
+                    <a href="https://amzn.to/4sTtQYK" target="_blank" class="btn-amazon">Buy on Amazon</a>
+                </div>
             </div>
-        </div>
 
-        <div class="glass-card">
-            <div class="img-box"><img src="https://m.media-amazon.com/images/I/61MvU+GzPmL._AC_SL1500_.jpg"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h4 class="font-bold text-lg mb-2">Pulse Oximeter</h4>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">SpO2 Oxygen saturation sensor.</p>
-                <a href="https://amzn.to/3ZmXZC3" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card">
+                <div class="img-box"><img src="https://m.media-amazon.com/images/I/61MvU+GzPmL._AC_SL1500_.jpg"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-1">Pulse Oximeter</h3>
+                    <p class="text-gray-400 text-xs mb-6">Finger Pulse SpO2 Sensor.</p>
+                    <a href="https://amzn.to/3ZmXZC3" target="_blank" class="btn-amazon">Buy on Amazon</a>
+                </div>
             </div>
-        </div>
 
-        <div class="glass-card">
-            <div class="img-box"><img src="https://m.media-amazon.com/images/I/61j6K5eXkUL._AC_SL1500_.jpg"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h4 class="font-bold text-lg mb-2">Digital Thermometer</h4>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">Infrared non-contact sensor.</p>
-                <a href="https://amzn.to/4pRH4lZ" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card">
+                <div class="img-box"><img src="https://m.media-amazon.com/images/I/61j6K5eXkUL._AC_SL1500_.jpg"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-1">Digital Thermometer</h3>
+                    <p class="text-gray-400 text-xs mb-6">Non-contact Infrared Sensor.</p>
+                    <a href="https://amzn.to/4pRH4lZ" target="_blank" class="btn-amazon">Buy on Amazon</a>
+                </div>
             </div>
-        </div>
 
-        <div class="glass-card">
-            <div class="img-box"><img src="https://m.media-amazon.com/images/I/71YyV5I6O-L._AC_SL1500_.jpg"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h4 class="font-bold text-lg mb-2">TENS Massager</h4>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">Electronic pulse therapy unit.</p>
-                <a href="https://amzn.to/3YNYRj1" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card">
+                <div class="img-box"><img src="https://m.media-amazon.com/images/I/71YyV5I6O-L._AC_SL1500_.jpg"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-1">TENS Massager</h3>
+                    <p class="text-gray-400 text-xs mb-6">Electronic Pulse Therapy.</p>
+                    <a href="https://amzn.to/3YNYRj1" target="_blank" class="btn-amazon">Buy on Amazon</a>
+                </div>
             </div>
-        </div>
 
-        <div class="glass-card">
-            <div class="img-box"><img src="https://m.media-amazon.com/images/I/61K-K+E-5nL._AC_SL1500_.jpg"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h4 class="font-bold text-lg mb-2">Smartphone ECG</h4>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">Portable cardiac monitor.</p>
-                <a href="https://amzn.to/3LP3GWd" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card">
+                <div class="img-box"><img src="https://m.media-amazon.com/images/I/61K-K+E-5nL._AC_SL1500_.jpg"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-1">Smartphone ECG</h3>
+                    <p class="text-gray-400 text-xs mb-6">Portable Cardiac Monitor.</p>
+                    <a href="https://amzn.to/3LP3GWd" target="_blank" class="btn-amazon">Buy on Amazon</a>
+                </div>
             </div>
-        </div>
 
-        <div class="glass-card">
-            <div class="img-box"><img src="https://m.media-amazon.com/images/I/615Yv2h6vLL._AC_SL1500_.jpg"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h4 class="font-bold text-lg mb-2">Stethoscope</h4>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">High acoustic clinical grade.</p>
-                <a href="https://amzn.to/4bhDazn" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card">
+                <div class="img-box"><img src="https://m.media-amazon.com/images/I/615Yv2h6vLL._AC_SL1500_.jpg"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-1">Stethoscope</h3>
+                    <p class="text-gray-400 text-xs mb-6">Professional Acoustic Grade.</p>
+                    <a href="https://amzn.to/4bhDazn" target="_blank" class="btn-amazon">Buy on Amazon</a>
+                </div>
             </div>
-        </div>
 
-        <div class="glass-card">
-            <div class="img-box"><img src="https://m.media-amazon.com/images/I/51r2X7W6TdL._AC_SL1200_.jpg"></div>
-            <div class="p-6 flex-grow flex flex-col">
-                <h4 class="font-bold text-lg mb-2">Nebulizer</h4>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">Mesh technology respiratory therapy.</p>
-                <a href="https://amzn.to/3NWZS5V" target="_blank" class="btn-amazon">Buy on Amazon</a>
+            <div class="glass-card">
+                <div class="img-box"><img src="https://m.media-amazon.com/images/I/51r2X7W6TdL._AC_SL1200_.jpg"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-1">Nebulizer</h3>
+                    <p class="text-gray-400 text-xs mb-6">Compact Mesh Respiratory.</p>
+                    <a href="https://amzn.to/3NWZS5V" target="_blank" class="btn-amazon">Buy on Amazon</a>
+                </div>
             </div>
-        </div>
 
+        </div>
     </main>
-
-    <footer class="py-10 text-center text-[9px] text-gray-700 italic border-t border-white/5">
-        Thoufiq Ahamed is an Amazon Associate.
-    </footer>
 
 </body>
 </html>
