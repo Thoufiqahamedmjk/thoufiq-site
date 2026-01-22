@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | Healthcare Tech by Thoufiq Ahamed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; font-family: 'Inter', sans-serif; }
+        .solution-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s ease; }
+        .solution-card:hover { border-color: #3b82f6; background: rgba(59, 130, 246, 0.05); transform: translateY(-5px); }
+        .gradient-text { background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <nav class="p-6 flex justify-between items-center border-b border-white/10">
+        <a href="index.html" class="text-sm font-bold uppercase tracking-widest flex items-center gap-2">
+            <span>←</span> Back to Home
+        </a>
+        <img src="favicon.png" onerror="this.src='favicon.PNG'" class="w-8 h-8 rounded">
+    </nav>
+
+    <header class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl font-black mb-6 tracking-tighter">Strategic <span class="gradient-text">Solutions.</span></h1>
+        <p class="text-gray-400 text-lg">Curated technology and systems I implement to scale healthcare operations.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="solution-card p-10 rounded-[2.5rem]">
+            <div class="flex justify-between items-start mb-6">
+                <h2 class="text-3xl font-black">Workforce <br>Automation</h2>
+                <span class="bg-blue-600/20 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Top Partner</span>
+            </div>
+            <p class="text-gray-400 mb-8 leading-relaxed">
+                Implementation of <strong>BusinessTime</strong> automated attendance systems. Eliminate manual registers and biometric failures with sensor-based tracking designed for hospital shifts.
+            </p>
+            <ul class="space-y-3 mb-10 text-sm text-gray-300">
+                <li class="flex items-center gap-2">✅ Auto-Payroll Integration</li>
+                <li class="flex items-center gap-2">✅ Shift-wise Attendance Tracking</li>
+                <li class="flex items-center gap-2">✅ Mobile-First Management</li>
+            </ul>
+            <a href="https://wa.me/919385352585?text=I'm+interested+in+BusinessTime+Implementation" class="inline-block w-full text-center bg-blue-600 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all">Book Installation Audit</a>
+        </div>
+
+        <div class="solution-card p-10 rounded-[2.5rem]">
+            <h2 class="text-3xl font-black mb-6">Paperless <br>IHMS</h2>
+            <p class="text-gray-400 mb-8 leading-relaxed">
+                Full-scale Hospital Management Information Systems. From OPD registration to Pharmacy and Lab modules, I ensure your IT ecosystem is HIPAA compliant and fast.
+            </p>
+            <ul class="space-y-3 mb-10 text-sm text-gray-300">
+                <li class="flex items-center gap-2">✅ Cloud-Based Architecture</li>
+                <li class="flex items-center gap-2">✅ Patient Portal Setup</li>
+                <li class="flex items-center gap-2">✅ Multi-Department Sync</li>
+            </ul>
+            <a href="https://forms.gle/fXvfBn8iPnjpcbtBA" class="inline-block w-full text-center border border-white/20 py-4 rounded-2xl font-bold hover:bg-white hover:text-black transition-all">Request Demo</a>
+        </div>
+
+    </main>
+
+    <footer class="py-12 text-center border-t border-white/5 opacity-50 text-xs tracking-widest uppercase">
+        © 2026 Thoufiq Ahamed | Solutions & Partnerships
+    </footer>
+
+</body>
+</html>
