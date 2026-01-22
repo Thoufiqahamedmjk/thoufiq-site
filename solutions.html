@@ -3,104 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinical Inventory | 10 Solutions</title>
+    <title>Clinical Inventory | 10 Verified Products</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@300;400;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;800&display=swap');
         body { background: #020617; color: white; font-family: 'Plus Jakarta Sans', sans-serif; }
-        .bg-medical { background: radial-gradient(at 100% 0%, hsla(210,100%,15%,1) 0, transparent 50%), radial-gradient(at 0% 100%, hsla(220,100%,10%,1) 0, transparent 50%); background-color: #020617; }
         .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(15px); height: 100%; display: flex; flex-direction: column; transition: 0.3s; }
         .glass-card:hover { border-color: #fbbf24; transform: translateY(-5px); }
         .btn-gold { background: #fbbf24; color: #000; font-weight: 800; transition: 0.3s; display: block; text-align: center; }
         .product-image { width: 100%; height: 220px; object-fit: contain; background: white; border-radius: 1rem; padding: 15px; margin-bottom: 1.5rem; }
     </style>
 </head>
-<body class="bg-medical min-h-screen">
+<body class="bg-[#020617] min-h-screen p-8">
 
-    <nav class="max-w-7xl mx-auto p-8 flex justify-between items-center">
-        <a href="index.html" class="text-sm font-bold tracking-widest uppercase text-yellow-500">← Back Home</a>
-        <span class="text-[10px] font-black uppercase tracking-[0.3em] opacity-40">10 Verified Solutions</span>
-    </nav>
+    <div class="max-w-7xl mx-auto">
+        <a href="index.html" class="text-yellow-500 uppercase text-xs font-bold tracking-widest">← Back Home</a>
+        <h1 class="text-5xl font-black uppercase mt-6 mb-12 italic">Diagnostic Inventory.</h1>
 
-    <header class="max-w-7xl mx-auto px-8 pt-10 pb-16">
-        <h1 class="text-5xl md:text-7xl font-extrabold uppercase tracking-tighter mb-4">Clinical <br> <span class="italic font-light text-gray-500">Inventory.</span></h1>
-    </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    <section class="max-w-7xl mx-auto px-8 pb-32">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            
             <div class="glass-card p-6 rounded-3xl">
-                <img src="tens.jpg" class="product-image">
-                <h3 class="font-bold text-lg">Physio TENS Unit</h3>
-                <p class="text-gray-500 text-xs mb-6">PULSE THERAPY</p>
-                <div class="mt-auto"><a href="https://amzn.to/3B423fA" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="tens.jpg" class="product-image" alt="Physio TENS">
+                <h3 class="font-bold text-sm uppercase">Physio TENS Unit</h3>
+                <a href="https://amzn.to/4sJ9nFQ" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="Control D Spirometer 3.jpg" class="product-image">
-                <h3 class="font-bold text-lg">Control D Spirometer</h3>
-                <p class="text-gray-500 text-xs mb-6">LUNG TRAINER</p>
-                <div class="mt-auto"><a href="https://amzn.to/4gY09uO" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="bodyfat.jpg" class="product-image" alt="Body Fat Monitor">
+                <h3 class="font-bold text-sm uppercase">Body Fat Monitor</h3>
+                <a href="https://amzn.to/4sTtQYK" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="Medical Vein Detection Tool.jpg" class="product-image">
-                <h3 class="font-bold text-lg">Vein Detection Tool</h3>
-                <p class="text-gray-500 text-xs mb-6">CLINICAL AID</p>
-                <div class="mt-auto"><a href="https://amzn.to/3XUqMTo" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="kneemassager.jpg" class="product-image" alt="Knee Massager">
+                <h3 class="font-bold text-sm uppercase">Heat Knee Massager</h3>
+                <a href="https://amzn.to/3ZmXZC3" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="Sunfox Spandan Pro Portable ECG Machine.jpg" class="product-image">
-                <h3 class="font-bold text-lg">Spandan Pro ECG</h3>
-                <p class="text-gray-500 text-xs mb-6">CARDIAC MONITOR</p>
-                <div class="mt-auto"><a href="https://amzn.to/4ey1PqS" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="tenst-30spiral.jpg" class="product-image" alt="TENS Spiral Cable">
+                <h3 class="font-bold text-sm uppercase">TENS Spiral Cable</h3>
+                <a href="https://amzn.to/4pRH4lZ" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="bodyfat.jpg" class="product-image">
-                <h3 class="font-bold text-lg">Body Fat Monitor</h3>
-                <p class="text-gray-500 text-xs mb-6">ANALYZER</p>
-                <div class="mt-auto"><a href="https://amzn.to/4eG1R8F" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="omronbp.jpg" class="product-image" alt="Omron BP Monitor">
+                <h3 class="font-bold text-sm uppercase">Omron BP Monitor</h3>
+                <a href="https://amzn.to/3YNYRj1" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="kneemassager.jpg" class="product-image">
-                <h3 class="font-bold text-lg">Knee Heat Massager</h3>
-                <p class="text-gray-500 text-xs mb-6">JOINT THERAPY</p>
-                <div class="mt-auto"><a href="https://amzn.to/4eGv4Cg" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="Control D Spirometer 3.jpg" class="product-image" alt="Spirometer">
+                <h3 class="font-bold text-sm uppercase">Control D Spirometer</h3>
+                <a href="https://amzn.to/3LP3GWd" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="Portronics Cleansify Ear Endoscope.jpg" class="product-image">
-                <h3 class="font-bold text-lg">Cleansify Endoscope</h3>
-                <p class="text-gray-500 text-xs mb-6">VISUAL CLEANING</p>
-                <div class="mt-auto"><a href="https://amzn.to/3N9rS3w" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="Medical Vein Detection Tool.jpg" class="product-image" alt="Vein Finder">
+                <h3 class="font-bold text-sm uppercase">Vein Detection Tool</h3>
+                <a href="https://amzn.to/4bhDazn" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="tenst-30spiral.jpg" class="product-image">
-                <h3 class="font-bold text-lg">TENS T-30 Spiral</h3>
-                <p class="text-gray-500 text-xs mb-6">ACCESSORIES</p>
-                <div class="mt-auto"><a href="https://amzn.to/3ZStDof" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="Portronics Cleansify Ear Endoscope.jpg" class="product-image" alt="Ear Endoscope">
+                <h3 class="font-bold text-sm uppercase">Cleansify Endoscope</h3>
+                <a href="https://amzn.to/3NWZS5V" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="amiciCare WiFi Oral Endoscope with 6-LED Lig....jpg" class="product-image">
-                <h3 class="font-bold text-lg">WiFi Oral Endoscope</h3>
-                <p class="text-gray-500 text-xs mb-6">DENTAL VISION</p>
-                <div class="mt-auto"><a href="https://amzn.to/3BtoO3o" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="amiciCare WiFi Oral Endoscope with 6-LED Light.jpg" class="product-image" alt="Oral Endoscope">
+                <h3 class="font-bold text-sm uppercase">WiFi Oral Endoscope</h3>
+                <a href="https://amzn.to/4pVbtzH" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
             <div class="glass-card p-6 rounded-3xl">
-                <img src="Dr Trust BP Monitor.jpg" class="product-image">
-                <h3 class="font-bold text-lg">Dr. Trust BP Monitor</h3>
-                <p class="text-gray-500 text-xs mb-6">HYPERTENSION AID</p>
-                <div class="mt-auto"><a href="https://amzn.to/3ZStDof" target="_blank" class="btn-gold w-full py-4 rounded-xl text-[10px] uppercase">Buy on Amazon</a></div>
+                <img src="Sunfox Spandan Pro Portable ECG Machine.jpg" class="product-image" alt="ECG">
+                <h3 class="font-bold text-sm uppercase">Spandan Pro ECG</h3>
+                <a href="https://amzn.to/4b86dVX" target="_blank" class="btn-gold py-4 mt-auto rounded-xl text-[10px]">VIEW ON AMAZON</a>
             </div>
 
         </div>
-    </section>
+    </div>
 
 </body>
 </html>
