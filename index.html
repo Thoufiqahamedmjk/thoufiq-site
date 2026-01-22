@@ -3,100 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoufiq Ahamed | Healthcare Digital Transformation & Branding</title>
+    <title>Thoufiq Ahamed | Healthcare Digital Transformation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@300;400;800&display=swap');
-        body { background: #020617; color: white; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .bg-medical { 
-            background-color: #020617; 
-            background-image: radial-gradient(at 100% 0%, hsla(210,100%,15%,1) 0, transparent 50%), 
-                              radial-gradient(at 0% 100%, hsla(220,100%,10%,1) 0, transparent 50%); 
-            background-attachment: fixed; 
-        }
-        .btn-gold { background: #fbbf24; color: #000; font-weight: 800; transition: 0.4s; display: inline-flex; align-items: center; justify-content: center; }
-        .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(251, 191, 36, 0.4); }
-        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
         
-        /* Floating WhatsApp Button */
-        .whatsapp-float { 
-            position: fixed; 
-            bottom: 30px; 
-            right: 30px; 
-            background-color: #25d366; 
-            color: #FFF; 
-            border-radius: 50px; 
-            width: 65px; 
-            height: 65px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            z-index: 1000; 
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
-            transition: 0.3s;
+        body { background: #010409; color: #e6edf3; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        
+        /* Vibrant Clinical Gradient */
+        .bg-vibrant { 
+            background: radial-gradient(circle at 0% 0%, #004a7c 0%, transparent 40%),
+                        radial-gradient(circle at 100% 100%, #00d2ff 0%, transparent 40%);
+            background-color: #010409;
+            background-attachment: fixed;
         }
-        .whatsapp-float:hover { transform: scale(1.1); }
+
+        .text-gradient {
+            background: linear-gradient(to right, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-vibrant { 
+            background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+            color: white; 
+            font-weight: 700; 
+            transition: 0.4s; 
+            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.2);
+        }
+        
+        .btn-vibrant:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 25px rgba(0, 210, 255, 0.4); 
+        }
+
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(12px); 
+        }
+
+        .whatsapp-float { 
+            position: fixed; bottom: 30px; right: 30px; background-color: #25d366; 
+            color: #FFF; border-radius: 50px; width: 60px; height: 60px; 
+            display: flex; align-items: center; justify-content: center; z-index: 1000; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
-<body class="bg-medical min-h-screen">
+<body class="bg-vibrant min-h-screen">
 
     <a href="https://wa.me/919385352585" class="whatsapp-float" target="_blank">
-        <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </a>
 
-    <nav class="max-w-7xl mx-auto flex justify-between items-center p-8 sticky top-0 z-50 bg-[#020617]/90 backdrop-blur-md">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center p-8 sticky top-0 z-50 bg-[#010409]/80 backdrop-blur-md">
         <div class="flex items-center gap-3">
-            <div class="bg-yellow-500 text-black font-black w-10 h-10 flex items-center justify-center rounded-lg font-sync text-xl">T</div>
-            <span class="text-sm font-bold tracking-[0.3em] uppercase">Thoufiq Ahamed</span>
+            <div class="bg-gradient-to-br from-[#00d2ff] to-[#3a7bd5] text-white font-black w-10 h-10 flex items-center justify-center rounded-lg shadow-lg">T</div>
+            <span class="text-xs font-bold tracking-[0.3em] uppercase">Thoufiq Ahamed</span>
         </div>
-        <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
-            <a href="#services" class="hover:text-yellow-500 transition">Services</a>
-            <a href="solutions.html" class="hover:text-yellow-500 transition border-b border-yellow-500/50">Inventory</a>
+        <div class="flex gap-6">
+            <a href="solutions.html" class="text-[10px] font-bold uppercase tracking-widest text-[#00d2ff] border border-[#00d2ff]/30 px-4 py-2 rounded-full hover:bg-[#00d2ff]/10 transition">Device Catalog</a>
         </div>
     </nav>
 
-    <header class="max-w-7xl mx-auto px-8 pt-20 pb-32">
-        <h1 class="text-6xl md:text-9xl font-extrabold uppercase mb-10 tracking-tighter leading-none">
-            Growth <br> <span class="italic font-light text-gray-500">Consultant.</span>
-        </h1>
-        <p class="text-gray-400 text-xl md:text-2xl font-light mb-12 max-w-3xl leading-relaxed">
-            I help healthcare brands dominate through <strong>Digital Transformation</strong>, 
-            <strong>Medical Camp Operations</strong>, and <strong>Ground Level Promotions</strong>.
-        </p>
-        <div class="flex flex-wrap gap-6">
-            <a href="https://wa.me/919385352585" class="btn-gold px-12 py-5 rounded-xl uppercase tracking-widest text-sm">Get Consulted</a>
-            <a href="solutions.html" class="border border-white/10 px-12 py-5 rounded-xl uppercase tracking-widest text-sm hover:bg-white/5 transition">Device Inventory</a>
-        </div>
-    </header>
-
-    <section id="services" class="max-w-7xl mx-auto px-8 py-32 border-t border-white/5">
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="glass-card p-12 rounded-[3rem]">
-                <h3 class="text-3xl font-bold uppercase mb-6 text-yellow-500">01. Digital Transformation</h3>
-                <p class="text-gray-400 leading-loose">Modernizing healthcare workflows by integrating **Businesstime.app** and digital branding tools to increase efficiency and patient acquisition.</p>
-            </div>
-            <div class="glass-card p-12 rounded-[3rem]">
-                <h3 class="text-3xl font-bold uppercase mb-6 text-yellow-500">02. Branding & Social</h3>
-                <p class="text-gray-400 leading-loose">Specialized healthcare branding and social media promotions designed to build authority for diagnostic centers and medical professionals.</p>
-            </div>
-            <div class="glass-card p-12 rounded-[3rem]">
-                <h3 class="text-3xl font-bold uppercase mb-6 text-yellow-500">03. Medical Camps</h3>
-                <p class="text-gray-400 leading-loose">A-to-Z medical camp arrangements, including logistics, screening equipment setup, and local community outreach.</p>
-            </div>
-            <div class="glass-card p-12 rounded-[3rem]">
-                <h3 class="text-3xl font-bold uppercase mb-6 text-yellow-500">04. Ground Level Promotions</h3>
-                <p class="text-gray-400 leading-loose">Strategic physical branding and field-based promotions to capture the local healthcare market effectively.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="border-t border-white/5 bg-black/40 py-20 px-8 text-center">
-        <div class="max-w-7xl mx-auto">
-            <p class="text-[10px] text-gray-500 uppercase tracking-[0.4em] mb-6 font-bold">
-                © 2026 Thoufiq Ahamed. All Rights Reserved.
+    <main class="max-w-7xl mx-auto px-8 pt-20 pb-32">
+        <header class="mb-24">
+            <h1 class="text-6xl md:text-8xl font-extrabold uppercase mb-8 tracking-tighter leading-none">
+                Digital <br> <span class="text-gradient italic font-light">Transformation.</span>
+            </h1>
+            <p class="text-gray-400 text-xl md:text-2xl font-light mb-12 max-w-2xl leading-relaxed">
+                Strategic consulting for the healthcare industry. Branding, Medical Camps, and Ground Level Promotions.
             </p>
-            <p class="text-[9px] text-gray-600 leading-loose uppercase tracking-widest max-w-3xl mx-auto">
-                Disclaimer: Life Line Medical Equipment and Consultancy provides information for educational and strategic purposes. We are participants in the Amazon Services LLC Associates Program. Clinical services and ground promotions are executed in compliance with local healthcare norms.
+            <div class="flex flex-wrap gap-4">
+                <a href="https://wa.me/919385352585" class="btn-vibrant px-12 py-5 rounded-2xl uppercase tracking-widest text-xs">Consultation</a>
+                <a href="#services" class="border border-white/10 px-12 py-5 rounded-2xl uppercase tracking-widest text-xs hover:bg-white/5 transition">Our Focus</a>
+            </div>
+        </header>
+
+        <section id="services" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass-card p-10 rounded-[2rem]">
+                <div class="w-12 h-12 bg-[#00d2ff]/20 rounded-xl mb-6 flex items-center justify-center text-[#00d2ff] font-bold">01</div>
+                <h3 class="text-xl font-bold uppercase mb-4">Social Promotions</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Professional branding and social media growth strategies specifically tailored for diagnostic centers and clinical specialists.</p>
+            </div>
+            <div class="glass-card p-10 rounded-[2rem]">
+                <div class="w-12 h-12 bg-[#3a7bd5]/20 rounded-xl mb-6 flex items-center justify-center text-[#3a7bd5] font-bold">02</div>
+                <h3 class="text-xl font-bold uppercase mb-4">Medical Camps</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">End-to-end medical camp arrangements, including ground logistics, diagnostic equipment screening, and patient outreach.</p>
+            </div>
+            <div class="glass-card p-10 rounded-[2rem]">
+                <div class="w-12 h-12 bg-white/10 rounded-xl mb-6 flex items-center justify-center text-white font-bold">03</div>
+                <h3 class="text-xl font-bold uppercase mb-4">Ground Branding</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Direct ground-level promotions and B2B medical networking to establish physical presence in the healthcare market.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/5 py-20 px-8 text-center bg-black/40">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-[10px] text-gray-500 uppercase tracking-[0.4em] mb-6 font-bold">© 2026 Thoufiq Ahamed. All Rights Reserved.</p>
+            <p class="text-[9px] text-gray-600 leading-loose uppercase tracking-widest max-w-4xl mx-auto px-4">
+                Disclaimer: Life Line Medical Equipment and Consultancy provides strategic healthcare insights. We are participants in the Amazon Associates program. Always consult a physician for medical advice.
             </p>
         </div>
     </footer>
